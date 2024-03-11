@@ -22,7 +22,7 @@ const Topbar = () => {
           <FaBars size={32} onClick={toggleMenu} className="cursor-pointer" />
         </button>
         <div>
-          <ul className="text-2xl lg:flex gap-5 hidden">
+          <ul className="text-lg lg:flex gap-5 hidden">
             <li className="my-3 ">
               <Link
                 onClick={toggleMenu}

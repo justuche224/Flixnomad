@@ -51,7 +51,7 @@ const page = () => {
           </li>
         </ol>
       </nav>
-      <Genre movies={moviesdb} />;
+      <Genre movies={moviesdb} />
     </section>
   );
 };

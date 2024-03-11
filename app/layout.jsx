@@ -2,7 +2,7 @@ import Topbar from "@/components/nav/Topbar";
 import "./globals.css";
 
 export const metadata = {
-  title: "Flixnomad",
+  title: "Flixnomad: HD Movies & TV Shows",
   description:
     "Download Movies and Tv shows in All qualities. 2160p 1080p 720p 480p",
 };

@@ -6,7 +6,8 @@ import BackButton from "@/utils/BackButton";
 
 const SearchPage = ({ params, movies }) => {
   const [searchResults, setSearchResults] = useState([]);
-  const searchTerm = params.searchTerm.toLowerCase();
+  const decodedSearchTerm = decodeURIComponent(params.searchTerm);
+  const searchTerm = decodedSearchTerm.toLowerCase();
 
   useEffect(() => {
     const searchWords = searchTerm.split(/\s+/);
