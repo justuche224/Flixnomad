@@ -1,5 +1,28 @@
 export const moviesdb = [
   {
+    id: "Dune-Part-Two",
+    image: "https://i.ibb.co/MhYJqfq/dune-part-two-2024.jpg",
+    name: "Dune Part Two",
+    details:
+      "Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the universe, he must prevent a terrible future only he can foresee.",
+    downloadLink: "page.html?id=Barbie-2023",
+    trailer: "https://www.youtube.com/embed/U2Qp5pL3ovA",
+    genre: {
+      genre1: "Action",
+      genre2: "Adventure",
+      genre3: "Drama",
+    },
+    ratings: {
+      dataTitle: "tt1517268",
+      alt: "Barbie (2023) on IMDb",
+    },
+    releaseDate: "1 March 2024",
+    runtime: "2h 46m",
+    director: "Denis Villeneuve",
+    rated: "PG-13",
+    type: "movie",
+  },
+  {
     id: "Barbie-2023",
     image:
       "https://i.ibb.co/T1bqty4/MV5-BOWIw-ZGY0-OTYt-Zj-Uz-Yy00-Nz-Rm-LTg5-Yzgt-YWMz-NWQ0-Mm-Zi-Y2-Mw-Xk-Ey-Xk-Fqc-Gde-QXVy-MTUz-MTg2.jpg",

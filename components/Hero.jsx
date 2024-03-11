@@ -9,26 +9,26 @@ const Hero = () => {
   const heroRef = useRef(null);
   const [hero, setHero] = useState([
     {
-      id: "Barbie-2023",
-      name: "Barbie 2023",
-      image: "https://i.ibb.co/nD9ynd8/IMG-20230809-042638-807.jpg",
-      downloadLink: "page.html?id=Barbie-2023",
+      id: "Dune-Part-Two",
+      image: "https://i.ibb.co/MhYJqfq/dune-part-two-2024.jpg",
+      name: "Dune Part Two",
       details:
-        "Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.",
+        "Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the universe, he must prevent a terrible future only he can foresee.",
+      downloadLink: "page.html?id=Barbie-2023",
+      trailer: "https://www.youtube.com/embed/U2Qp5pL3ovA",
       genre: {
-        genre1: "Adventure",
-        genre2: "Comedy",
-        genre3: "Fantasy",
+        genre1: "Action",
+        genre2: "Adventure",
+        genre3: "Drama",
       },
       ratings: {
         dataTitle: "tt1517268",
         alt: "Barbie (2023) on IMDb",
       },
-      releaseDate: "20 July 2023",
-      runtime: "1h 54min",
-      director: "Greta Gerwig",
+      releaseDate: "1 March 2024",
+      runtime: "2h 46m",
+      director: "Denis Villeneuve",
       rated: "PG-13",
-      movieLink: "page.html?id=Barbie-2023",
       type: "movie",
     },
     {

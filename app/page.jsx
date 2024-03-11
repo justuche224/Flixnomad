@@ -52,13 +52,13 @@ export default async function Home({ searchParams }) {
         </h1>
       ) : (
         <>
-          <h1 id="movies" className="text-xl text-center mt-5">
-            Latest Movies
-          </h1>
+          <hr id="movies" className="my-10" />
+          <br />
+          <h1 className="text-xl text-center mt-10">Latest Movies</h1>
           <MovieList movies={data.items} />
           <hr className="my-5" />
           {isPageOutOfRange ? (
-            <div>No more pages...</div>
+            <div className="text-center">No more pages...</div>
           ) : (
             <div className="flex justify-center items-center mt-16">
               <div className="flex border-[1px] gap-4 rounded-[10px] border-light-green p-4">
@@ -83,8 +83,8 @@ export default async function Home({ searchParams }) {
                     key={index}
                     className={
                       page === pageNumber
-                        ? "bg-green-500 fw-bold px-2 rounded-md text-black"
-                        : "hover:bg-green-500 px-1 rounded-md"
+                        ? "bg-red-500 fw-bold px-2 rounded-md text-black"
+                        : "hover:bg-red-500 px-1 rounded-md"
                     }
                     href={`?page=${pageNumber}#movies`}
                   >

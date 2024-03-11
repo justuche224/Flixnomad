@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import MoviesList from "../movies/MovieList";
 import BackButton from "@/utils/BackButton";
+import { Telegram } from "@/utils/telegram";
 
 const SearchPage = ({ params, movies }) => {
   const [searchResults, setSearchResults] = useState([]);
@@ -32,7 +33,16 @@ const SearchPage = ({ params, movies }) => {
           <MoviesList movies={searchResults} />
         </div>
       ) : (
-        <h1 className="text-4xl text-center m-5">no result</h1>
+        <div>
+          <h1 className="text-4xl text-center m-5">No result!</h1>
+          <p className="text-center">
+            Do you want this movie uploaded ? join our community to request for
+            it
+          </p>
+          <span className="flex justify-center mt-2">
+            <Telegram />
+          </span>
+        </div>
       )}
     </div>
   );

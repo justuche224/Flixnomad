@@ -7,6 +7,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import SearchBar from "../search/SearchBar";
+import { Telegram } from "@/utils/telegram";
 
 const Topbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -70,6 +71,9 @@ const Topbar = () => {
             </li>
             <li className="my-3">
               <SearchBar isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
+            </li>
+            <li className="my-3">
+              <Telegram />
             </li>
           </ul>
         </div>
@@ -148,6 +152,9 @@ const Topbar = () => {
           </li>
           <hr />
         </ul>
+        <div className="mt-2 flex justify-center">
+          <Telegram />
+        </div>
       </nav>
     </>
   );
