@@ -1,1 +1,1 @@
-export const baseUrl = "https://flixnomad.vercel.app";
+export const baseUrl = "http://localhost:3000";
