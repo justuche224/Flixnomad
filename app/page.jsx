@@ -4,23 +4,23 @@ import { MovieCarousel } from "@/components/movies/MovieCarousel";
 import { baseUrl } from "@/utils/baseUrl";
 import { moviesdb } from "@/database/db-main-movie";
 
-// async function getMovies() {
-//   try {
-//     const response = await fetch(`${baseUrl}/api/movies`, {
-//       method: "GET",
-//     });
-//     if (!response.ok) {
-//       throw new Error(`HTTP error ${response.status}`);
-//     }
-//     return response.json();
-//   } catch (error) {
-//     console.error("Error fetching movies:", error);
-//     return { error: "Failed to load movies" };
-//   }
-// }
+async function getMovies() {
+  try {
+    const response = await fetch(`${baseUrl}/api/movies`, {
+      method: "GET",
+    });
+    if (!response.ok) {
+      throw new Error(`HTTP error ${response.status}`);
+    }
+    return response.json();
+  } catch (error) {
+    console.error("(home page)Error fetching movies:", error);
+    return { error: "(home page)Failed to load movies" };
+  }
+}
 
 export default async function Home() {
-  //const movie = await getMovies();
+  const movie = await getMovies();
   return (
     <main>
       <Hero />
