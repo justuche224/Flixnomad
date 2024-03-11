@@ -21,7 +21,7 @@ export default async function Genre() {
   return (
     <div>
       <ul className="divide-y divide-gray-200">
-        {genres.map(({ genreName, count }) => (
+        {genres?.map(({ genreName, count }) => (
           <Link
             key={genreName}
             href={`/genres/${genreName}`}
