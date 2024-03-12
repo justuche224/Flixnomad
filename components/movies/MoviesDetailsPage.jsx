@@ -1,18 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export async function generateMetadata(props) {
-  const { movie } = props;
-
-  const title = `${movie.name} - Watch Now!`;
-  const description = `${movie.name} is a ${movie.genre?.genre1} movie released in ${movie.releaseDate}.`;
-
-  return {
-    title,
-    description,
-  };
-}
-
 const MoviesDetailsPage = ({ movie }) => {
   return (
     <div className="max-w-4xl mx-auto">

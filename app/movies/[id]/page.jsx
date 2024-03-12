@@ -1,5 +1,6 @@
 import MoviesDetailsPage from "@/components/movies/MoviesDetailsPage";
 import { baseUrl } from "@/utils/baseUrl";
+import { Telegram } from "@/utils/telegram";
 import Link from "next/link";
 
 async function getMovie(id) {
@@ -24,6 +25,25 @@ async function getMovie(id) {
     }; // Extract status code from error message
   }
 }
+export async function generateMetadata({ params }) {
+  const movie = await getMovie(params.id);
+
+  if (movie.error) {
+    if (movie.error.includes("404") || movie.error.slice(0, 3) === "404") {
+      return {
+        title: "Movie not Found",
+      };
+    } else {
+      return {
+        title: "Error",
+      };
+    }
+  }
+  return {
+    title: `Download ${movie.name}`,
+    description: `Download ${movie.name} in all qualities 2160p 1080p 720p 480p`,
+  };
+}
 
 export default async function page({ params }) {
   const movie = await getMovie(params.id);
@@ -40,6 +60,13 @@ export default async function page({ params }) {
             The movie you are looking for may have been removed or moved to a
             new link.
           </p>
+          <p className="text-center">
+            Do you want this movie uploaded ? join our community to request for
+            it
+          </p>
+          <span className="flex justify-center mt-2">
+            <Telegram />
+          </span>
           <Link
             href="/"
             className="px-2 py-1 hover:bg-transparent text-white bg-red-500 text-center rounded-none mt-5"

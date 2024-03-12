@@ -5,7 +5,7 @@ import Footer from "@/components/footer/Footer";
 export const metadata = {
   title: "Flixnomad: HD Movies & TV Shows",
   description:
-    "Download Movies and Tv shows in All qualities. 2160p 1080p 720p 480p",
+    "Download Movies and Tv shows in all qualities 2160p 1080p 720p 480p",
   keywords: [
     "Dowbload Movies",
     "Movies",
@@ -19,7 +19,7 @@ export const metadata = {
   openGraph: {
     title: "Flixnomad: HD Movies & TV Shows",
     description:
-      "Download Movies and Tv shows in All qualities. 2160p 1080p 720p 480p.", // A tailored description for social media sharing
+      "Download Movies and Tv shows in all qualities 2160p 1080p 720p 480p.",
     images: [
       {
         url: "/logo-st.png",
@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
             <Topbar />
           </nav>
         </header>
-        <main className="block md:flex gap-5">
+        <main className="block md:flex gap-5 min-h-screen">
           <section className="w-full">{children}</section>
         </main>
         <footer>

@@ -54,7 +54,7 @@ export default async function Home({ searchParams }) {
         <>
           <hr id="movies" className="my-10" />
           <br />
-          <h1 className="text-xl text-center mt-10">Latest Movies</h1>
+          <h1 className="text-xl text-center mt-5">Latest Movies</h1>
           <MovieList movies={data.items} />
           <hr className="my-5" />
           {isPageOutOfRange ? (

@@ -8,26 +8,26 @@ const Footer = () => {
         {currentYear} Flixnomad - For movie lovers by movie lovers
       </h1>
       <div className="text-center">
-        <Link className="mx-2" href="/">
+        <Link className="mx-2 hover:text-red-500" href="/">
           Home
         </Link>
-        <Link className="mx-2" href="/about">
+        <Link className="mx-2 hover:text-red-500" href="/about">
           About Us
         </Link>
-        <Link className="mx-2" href="/contact">
+        <Link className="mx-2 hover:text-red-500" href="/contact">
           Contact Us
         </Link>
-        <Link className="mx-2" href="/disclaimer">
+        <Link className="mx-2 hover:text-red-500" href="/disclaimer">
           Disclaimer
         </Link>
-        <Link className="mx-2" href="/help">
+        <Link className="mx-2 hover:text-red-500" href="/help">
           Help
         </Link>
-        <Link className="mx-2" href="/faq">
+        <Link className="mx-2 hover:text-red-500" href="/faq">
           F.A.Q.
         </Link>
         <br />
-        <Link className="mx-2" href="/terms">
+        <Link className="mx-2 hover:text-red-500" href="/terms">
           Terms & Conditions
         </Link>
       </div>

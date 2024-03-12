@@ -135,14 +135,23 @@ const Hero = () => {
     >
       <div className="h-full grid place-content-center text-left">
         <div className="pl-5 ">
-          <div className="my-2 lg:text-lg text-xs flex gap-4 ">
-            <Link href={`/genres/${hero[currentHeroIndex].genre.genre1}`}>
+          <div className="my-2 lg:text-lg text-xs flex gap-2 ">
+            <Link
+              className="hover:bg-red-500 transition-all duration-200 hover:rounded-full p-1"
+              href={`/genres/${hero[currentHeroIndex].genre.genre1}`}
+            >
               {hero[currentHeroIndex].genre.genre1}
             </Link>
-            <Link href={`/genres/${hero[currentHeroIndex].genre.genre2}`}>
+            <Link
+              className="hover:bg-red-500 transition-all duration-200 hover:rounded-full p-1"
+              href={`/genres/${hero[currentHeroIndex].genre.genre2}`}
+            >
               {hero[currentHeroIndex].genre.genre2}
             </Link>
-            <Link href={`/genres/${hero[currentHeroIndex].genre.genre3}`}>
+            <Link
+              className="hover:bg-red-500 transition-all duration-200 hover:rounded-full p-1"
+              href={`/genres/${hero[currentHeroIndex].genre.genre3}`}
+            >
               {hero[currentHeroIndex].genre.genre3}
             </Link>
           </div>
