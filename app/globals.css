@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 body {
   min-height: 100vh;
@@ -13,6 +14,36 @@ body {
   display: none;
 }
 
-.trending-img {
-  width: 90%;
+.trending {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(50px + 5vw), 1fr));
+  grid-gap: 1rem;
+}
+
+.trending div {
+  height: calc(90px + 5vw);
+}
+
+.pt-sans-regular {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-sans-regular-italic {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.pt-sans-bold {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.pt-sans-bold-italic {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
 }

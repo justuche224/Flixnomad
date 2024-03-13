@@ -110,53 +110,46 @@ const Topbar = () => {
           </Link>
         </div>
         <SearchBar isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
-        <ul className="text-2xl mt-4">
-          <li className="my-3 ">
-            <Link
-              onClick={toggleMenu}
-              href="/"
-              className={currentPath === "/" ? "font-bold text-red-500" : ""}
-            >
-              Home
-            </Link>
-          </li>
-          <hr />
-          <li className="my-3">
-            <Link
-              onClick={toggleMenu}
-              href="/movies"
-              className={
-                currentPath === "/movies" ? "font-bold text-red-500" : ""
-              }
-            >
-              Movies
-            </Link>
-          </li>
-          <hr />
-          <li className="my-3">
-            <Link
-              onClick={toggleMenu}
-              href="/series"
-              className={
-                currentPath === "/series" ? "font-bold text-red-500" : ""
-              }
-            >
+        <ul className={styles.mobileMenu}>
+          <Link
+            onClick={toggleMenu}
+            href="/"
+            className={currentPath === "/" ? "font-bold text-red-500" : ""}
+          >
+            <li className="my-[2px] bg-[#00031c] py-3 px-2">Home </li>
+          </Link>
+
+          <Link
+            onClick={toggleMenu}
+            href="/movies"
+            className={
+              currentPath === "/movies" ? "font-bold text-red-500" : ""
+            }
+          >
+            <li className="my-[2px] bg-[#00031c] py-3 px-2">Movies</li>
+          </Link>
+
+          <Link
+            onClick={toggleMenu}
+            href="/series"
+            className={
+              currentPath === "/series" ? "font-bold text-red-500" : ""
+            }
+          >
+            <li className="my-[2px] bg-[#00031c] py-3 px-2">
               Series & Tv Shows
-            </Link>
-          </li>
-          <hr />
-          <li className="my-3">
-            <Link
-              onClick={toggleMenu}
-              href="/genres"
-              className={
-                currentPath === "/genres" ? "font-bold text-red-500" : ""
-              }
-            >
-              Genres
-            </Link>
-          </li>
-          <hr />
+            </li>
+          </Link>
+
+          <Link
+            onClick={toggleMenu}
+            href="/genres"
+            className={
+              currentPath === "/genres" ? "font-bold text-red-500" : ""
+            }
+          >
+            <li className="my-[2px] bg-[#00031c] py-3 px-2">Genres</li>
+          </Link>
         </ul>
         <div className="mt-2 flex justify-center">
           <Telegram />

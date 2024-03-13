@@ -40,7 +40,7 @@ export async function generateMetadata({ params }) {
     }
   }
   return {
-    title: `${genre.name} Genre - Flixnomad`,
+    title: `${params.id} Genre - Flixnomad`,
   };
 }
 

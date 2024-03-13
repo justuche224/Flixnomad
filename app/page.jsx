@@ -25,7 +25,6 @@ export default async function Home({ searchParams }) {
   page = !page || page < 1 ? 1 : page;
   const perPage = 4;
   const data = await getData(perPage, page);
-  // console.log(data);
   const totalPages = Math.ceil(data.itemCount / perPage);
 
   const prevPage = page - 1 > 0 ? page - 1 : 1;
@@ -42,9 +41,7 @@ export default async function Home({ searchParams }) {
   return (
     <main>
       <Hero />
-      <div className="my-5 pl-5">
-        <h1 className="text-3xl">Trending Movies</h1>
-      </div>
+      <div className="my-5 pl-5"></div>
       <MovieCarousel movies={moviesdb} />
       {data.error ? (
         <h1 className="text-center text-3xl mt-[5.5rem]">
@@ -52,9 +49,9 @@ export default async function Home({ searchParams }) {
         </h1>
       ) : (
         <>
-          <hr id="movies" className="my-10" />
+          <br id="movies" />
           <br />
-          <h1 className="text-xl text-center mt-5">Latest Movies</h1>
+          <h2 className="text-xl text-center mt-5">Latest Movies</h2>
           <MovieList movies={data.items} />
           <hr className="my-5" />
           {isPageOutOfRange ? (

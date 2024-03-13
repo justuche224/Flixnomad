@@ -29,6 +29,9 @@ export const metadata = {
     type: "website",
   },
 };
+export const viewport = {
+  themeColor: "#00031c",
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -36,7 +39,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="./favicon.ico" sizes="any" />
       </head>
-      <body className="bg-[#00031c] text-white">
+      <body className="bg-[#00031c] text-white pt-sans-regular">
         <header>
           <nav aria-label="top nav bar" className="fixed top-0 w-full shadow">
             <Topbar />

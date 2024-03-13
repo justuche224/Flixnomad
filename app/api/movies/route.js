@@ -4,7 +4,7 @@ export const GET = async (req, res) => {
   console.log("triger");
   try {
     const page = req.nextUrl.searchParams.get("page"); // Extract page number from query string (default 1)
-    const perPage = 4; // Parse to integer
+    const perPage = 10; // Parse to integer
 
     // DB Connection
     const client = await connectToDatabase();

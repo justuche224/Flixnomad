@@ -19,7 +19,7 @@ const MoviesList = ({ movies }) => {
           >
             <Link href={`/movies/${movie._id}`}>
               <div>
-                <h1 className="font-bold text-xl">{movie.name}</h1>
+                <h2 className="font-bold text-xl">{movie.name}</h2>
                 <p className=" text-xs font-bold my-1">
                   <span className="mr-1">
                     <FaClock size={15} className="inline text-red-500 mr-1" />
