@@ -14,7 +14,6 @@ export const metadata = {
     "Series",
     "Tv shows",
   ],
-  color: "#00031c",
   metadataBase: new URL("https://flixnomad.vercel.app"),
   openGraph: {
     title: "Flixnomad: HD Movies & TV Shows",
@@ -35,7 +34,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/log-rd.png" sizes="any" />
+        <link rel="icon" href="./favicon.ico" sizes="any" />
       </head>
       <body className="bg-[#00031c] text-white">
         <header>

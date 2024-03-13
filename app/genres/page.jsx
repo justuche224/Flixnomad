@@ -1,5 +1,4 @@
 import Genre from "@/components/genres/Genre";
-import { moviesdb } from "@/database/db-main-movie";
 import Link from "next/link";
 
 const page = () => {
@@ -35,9 +34,9 @@ const page = () => {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="m1 9 4-4-4-4"
                 />
               </svg>
@@ -51,7 +50,7 @@ const page = () => {
           </li>
         </ol>
       </nav>
-      <Genre movies={moviesdb} />
+      <Genre />
     </section>
   );
 };

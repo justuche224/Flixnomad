@@ -13,7 +13,10 @@ const MoviesList = ({ movies }) => {
         }}
       >
         {movies.map((movie) => (
-          <div key={movie.id} className="my-5 mx-2 rounded-lg p-2 bg-[#090e3b]">
+          <div
+            key={movie._id}
+            className="my-5 mx-2 rounded-lg p-2 bg-[#090e3b]"
+          >
             <Link href={`/movies/${movie._id}`}>
               <div>
                 <h1 className="font-bold text-xl">{movie.name}</h1>

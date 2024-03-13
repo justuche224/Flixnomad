@@ -1,25 +1,43 @@
-import { moviesdb } from "../../movies";
+import { connectToDatabase } from "@/utils/database";
 
 export const GET = async (request) => {
   try {
-    // Count genres
-    const genreCounts = {};
-    moviesdb.forEach((movie) => {
-      const { genre } = movie;
-      Object.values(genre).forEach((genreName) => {
-        if (genreName) {
-          genreCounts[genreName] = (genreCounts[genreName] || 0) + 1;
-        }
-      });
-    });
+    // Connect to the database
+    const client = await connectToDatabase();
+    const db = client.db("flixnomad");
 
-    // Create an array of objects containing genre name and count
-    const genreArray = Object.entries(genreCounts).map(
-      ([genreName, count]) => ({
-        genreName,
-        count,
-      })
-    );
+    // Aggregate genres and their counts
+    const genreArray = await db
+      .collection("movies")
+      .aggregate([
+        {
+          $project: {
+            _id: 0, // Exclude _id field
+            genres: {
+              // Create an array of genres
+              $objectToArray: "$genre",
+            },
+          },
+        },
+        {
+          $unwind: "$genres", // Split the array into multiple documents
+        },
+        {
+          $group: {
+            _id: "$genres.v", // Group by genre value
+            count: { $sum: 1 }, // Count occurrences of each genre
+          },
+        },
+        {
+          $project: {
+            genreName: "$_id", // Rename _id field as genreName
+            count: 1, // Include count field
+            _id: 0, // Exclude _id field
+          },
+        },
+      ])
+      .toArray();
+
     return new Response(JSON.stringify(genreArray), { status: 200 });
   } catch (error) {
     return new Response("Internal Server Error", { status: 500 });

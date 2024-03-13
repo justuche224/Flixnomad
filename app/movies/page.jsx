@@ -1,7 +1,22 @@
 import MoviesPage from "@/components/movies/MoviesPage";
 import Link from "next/link";
 
-const page = () => {
+async function getData(perPage, page) {
+  try {
+    const response = await fetch(`${baseUrl}/api/movies/fun?page=${page}`, {
+      method: "GET",
+    });
+    if (!response.ok) {
+      throw new Error(`HTTP error ${response.status}`);
+    }
+    return response.json();
+  } catch (error) {
+    console.error("(home page)Error fetching movies:", error);
+    return { error: "(home page)Failed to load movies" };
+  }
+}
+
+export default async function page({ searchParams }) {
   return (
     <div className="mt-[5rem]">
       <nav className="flex justify-center mb-5" aria-label="Breadcrumb">
@@ -34,9 +49,9 @@ const page = () => {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="m1 9 4-4-4-4"
                 />
               </svg>
@@ -51,9 +66,7 @@ const page = () => {
         </ol>
       </nav>
 
-      <MoviesPage type={"movie"} />
+      <MoviesPage type={"movies"} />
     </div>
   );
-};
-
-export default page;
+}

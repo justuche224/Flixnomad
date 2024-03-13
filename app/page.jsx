@@ -7,7 +7,7 @@ import Link from "next/link";
 
 async function getData(perPage, page) {
   try {
-    const response = await fetch(`${baseUrl}/api/movies/fun?page=${page}`, {
+    const response = await fetch(`${baseUrl}/api/movies?page=${page}`, {
       method: "GET",
     });
     if (!response.ok) {

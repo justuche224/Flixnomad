@@ -79,7 +79,13 @@ const Topbar = () => {
         </div>
         <div>
           <Link href="/">
-            <Image src="/logo-st.png" alt="logo" width={150} height={50} />
+            <Image
+              src="/logo-st.png"
+              alt="logo"
+              width={150}
+              height={50}
+              priority
+            />
           </Link>
         </div>
       </div>

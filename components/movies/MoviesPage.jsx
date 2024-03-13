@@ -2,25 +2,30 @@
 
 import { useState, useEffect } from "react";
 import MoviesList from "./MovieList";
+import { useSearchParams, useRouter } from "next/navigation";
+import Loader from "../Loader/Loader";
 
 const MoviesPage = ({ type }) => {
   const [movies, setMovies] = useState([]);
   const [fetchingMovies, setFetchingMovies] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
-  const [genreFilter, setGenreFilter] = useState("all");
-  const [yearFilter, setYearFilter] = useState("all");
-  const [filteredMovies, setFilteredMovies] = useState([]);
+  const searchParams = useSearchParams();
+  const router = useRouter();
 
   useEffect(() => {
     async function fetchMovies() {
       setFetchingMovies(true);
       try {
-        const response = await fetch("/api/movies", {
-          method: "GET",
-        });
+        const genreFilter = searchParams.get("genreFilter") || "all";
+        const yearFilter = searchParams.get("yearFilter") || "all";
+        const response = await fetch(
+          `/api/${type}/filters?genreFilter=${genreFilter}&yearFilter=${yearFilter}`,
+          {
+            method: "GET",
+          }
+        );
         const data = await response.json();
         setMovies(data);
-        console.log(data);
       } catch (error) {
         setFetchingMovies(false);
         setErrorMessage("Error fetching notes: " + error.message);
@@ -30,64 +35,35 @@ const MoviesPage = ({ type }) => {
     }
 
     fetchMovies();
-  }, []);
+  }, [searchParams, type]);
 
   const handleGenreChange = (event) => {
-    setGenreFilter(event.target.value);
+    const genreFilter = event.target.value;
+    const yearFilter = searchParams.get("yearFilter") || "all";
+    router.push(`/${type}?genreFilter=${genreFilter}&yearFilter=${yearFilter}`);
   };
 
   const handleYearChange = (event) => {
-    setYearFilter(event.target.value);
+    const yearFilter = event.target.value;
+    const genreFilter = searchParams.get("genreFilter") || "all";
+    router.push(`/${type}?genreFilter=${genreFilter}&yearFilter=${yearFilter}`);
   };
 
-  const renderMovieList = () => {
-    let filtered = movies?.filter((movie) => {
-      return (
-        movie.type === type && // Ensure movie type is 'movie'
-        (genreFilter === "all" ||
-          movie.genre.genre1.toLowerCase() === genreFilter ||
-          movie.genre.genre2.toLowerCase() === genreFilter ||
-          movie.genre.genre3.toLowerCase() === genreFilter) &&
-        (yearFilter === "all" || movie.name.includes(yearFilter))
-      );
-    });
-    // Ensure only 50 movies are shown
-    filtered = filtered.slice(0, 50);
-    setFilteredMovies(filtered);
-  };
-
-  // Call renderMovieList whenever genreFilter or yearFilter changes
-  useEffect(() => {
-    const renderMovieList = () => {
-      let filtered = movies?.filter((movie) => {
-        return (
-          movie.type === type && // Ensure movie type is 'movie'
-          (genreFilter === "all" ||
-            movie.genre.genre1.toLowerCase() === genreFilter ||
-            movie.genre.genre2.toLowerCase() === genreFilter ||
-            movie.genre.genre3.toLowerCase() === genreFilter) &&
-          (yearFilter === "all" || movie.name.includes(yearFilter))
-        );
-      });
-      // Ensure only 50 movies are shown
-      filtered = filtered.slice(0, 50);
-      setFilteredMovies(filtered);
-    };
-    renderMovieList();
-  }, [genreFilter, yearFilter, movies, type]);
-  if (fetchingMovies) return <h1 className="text-center">loading..</h1>;
   return (
     <section>
+      {fetchingMovies && (
+        <div className="fixed top-0 grid place-content-center min-h-screen min-w-full bg-[#ffffff15]">
+          <Loader />
+        </div>
+      )}
       <div className="flex gap-5 w-full place-content-center">
         <div className="mb-2">
           <select
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            value={genreFilter}
+            className="bg-gray-50 border cursor-pointer border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            value={searchParams.get("genreFilter") || "all"}
             onChange={handleGenreChange}
           >
-            <option selected value="all">
-              Genres
-            </option>
+            <option value="all">Every Genres</option>
             <option value="action">action</option>
             <option value="romance">romance</option>
             <option value="comedy">comedy</option>
@@ -102,13 +78,11 @@ const MoviesPage = ({ type }) => {
         </div>
         <div className="mb-2">
           <select
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            value={yearFilter}
+            className="bg-gray-50 border cursor-pointer border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            value={searchParams.get("yearFilter") || "all"}
             onChange={handleYearChange}
           >
-            <option selected value="all">
-              Year
-            </option>
+            <option value="all">Every Year</option>
             <option value="2023">2023</option>
             <option value="2022">2022</option>
             <option value="2021">2021</option>
@@ -142,7 +116,13 @@ const MoviesPage = ({ type }) => {
         </div>
       </div>
       <div className="movieList">
-        <MoviesList movies={filteredMovies} />
+        {errorMessage ? (
+          <div>
+            <h3>Something went wrong</h3>
+          </div>
+        ) : (
+          <MoviesList movies={movies} />
+        )}
       </div>
     </section>
   );

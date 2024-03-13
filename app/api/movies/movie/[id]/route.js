@@ -1,8 +1,16 @@
-import { moviesdb } from "../../../movies";
-
+import { connectToDatabase } from "@/utils/database";
+import { ObjectId } from "mongodb";
 export const GET = async (request, { params }) => {
+  console.log(params.id);
   try {
-    const movie = moviesdb.find((movie) => movie.id === params.id);
+    // DB Connection
+    const client = await connectToDatabase();
+    const db = client.db("flixnomad");
+
+    const movie = await db
+      .collection("movies")
+      .findOne({ _id: new ObjectId(params.id) });
+
     if (!movie) {
       return new Response(JSON.stringify({ error: "Movie not found" }), {
         status: 404,

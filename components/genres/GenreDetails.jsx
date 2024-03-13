@@ -1,10 +1,6 @@
 import Link from "next/link";
 
-const GenreDetails = ({ params, movies }) => {
-  const genreMovies = movies.filter((movie) => {
-    return Object.values(movie.genre).includes(params.id);
-  });
-
+const GenreDetails = ({ genre, params }) => {
   return (
     <div className="mt-20 p-3">
       <nav className="flex justify-center mb-5" aria-label="Breadcrumb">
@@ -37,9 +33,9 @@ const GenreDetails = ({ params, movies }) => {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="m1 9 4-4-4-4"
                 />
               </svg>
@@ -62,9 +58,9 @@ const GenreDetails = ({ params, movies }) => {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="m1 9 4-4-4-4"
                 />
               </svg>
@@ -78,17 +74,21 @@ const GenreDetails = ({ params, movies }) => {
       <h1 className="text-3xl font-bold mb-4">
         Movies in the {params.id} Genre
       </h1>
-      <ul className="divide-y divide-gray-200">
-        {genreMovies.map((movie, index) => (
-          <Link
-            key={index}
-            href={`/movies/${movie.id}`}
-            className="underline text-gray-200"
-          >
-            <li className="py-3">{movie.name}</li>
-          </Link>
-        ))}
-      </ul>
+      {genre.length === 0 ? (
+        <h3 className="text-center p-5">No movies found</h3>
+      ) : (
+        <ul className="divide-y divide-gray-200">
+          {genre.map((movie, index) => (
+            <Link
+              key={index}
+              href={`/movies/${movie.id}`}
+              className="underline text-gray-200"
+            >
+              <li className="py-3">{movie.name}</li>
+            </Link>
+          ))}
+        </ul>
+      )}
     </div>
   );
 };
