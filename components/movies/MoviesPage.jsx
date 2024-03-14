@@ -1,9 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import MoviesList from "./MovieList";
 import { useSearchParams, useRouter } from "next/navigation";
 import Loader from "../Loader/Loader";
+import Movies from "./Movies";
 
 const MoviesPage = ({ type }) => {
   const [movies, setMovies] = useState([]);
@@ -121,7 +121,7 @@ const MoviesPage = ({ type }) => {
             <h3>Something went wrong</h3>
           </div>
         ) : (
-          <MoviesList movies={movies} />
+          <Movies movies={movies} />
         )}
       </div>
     </section>

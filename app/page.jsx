@@ -7,9 +7,12 @@ import Link from "next/link";
 
 async function getData(perPage, page) {
   try {
-    const response = await fetch(`${baseUrl}/api/movies?page=${page}`, {
-      method: "GET",
-    });
+    const response = await fetch(
+      `${baseUrl}/api/movies?page=${page}&perPage=${perPage}`,
+      {
+        method: "GET",
+      }
+    );
     if (!response.ok) {
       throw new Error(`HTTP error ${response.status}`);
     }
@@ -52,9 +55,9 @@ export default async function Home({ searchParams }) {
           <br id="movies" />
           <br />
           <h2 className="text-xl text-center mt-5">Latest Movies</h2>
-          <MovieList movies={data.items} />
+          <MovieList searchParams={searchParams} />
           <hr className="my-5" />
-          {isPageOutOfRange ? (
+          {/*isPageOutOfRange ? (
             <div className="text-center">No more pages...</div>
           ) : (
             <div className="flex justify-center items-center mt-16">
@@ -106,7 +109,7 @@ export default async function Home({ searchParams }) {
                 )}
               </div>
             </div>
-          )}
+          )*/}
         </>
       )}
     </main>

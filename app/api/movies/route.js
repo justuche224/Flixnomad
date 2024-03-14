@@ -3,9 +3,9 @@ import { connectToDatabase } from "@/utils/database";
 export const GET = async (req, res) => {
   console.log("triger");
   try {
-    const page = req.nextUrl.searchParams.get("page"); // Extract page number from query string (default 1)
-    const perPage = 10; // Parse to integer
-
+    const page = req.nextUrl.searchParams.get("page") || 1; // Extract page number from query string (default 1)
+    const perPage = parseInt(req.nextUrl.searchParams.get("perPage")) || 10; // Extract page number from query string (default 1)
+    console.log(perPage);
     // DB Connection
     const client = await connectToDatabase();
     const db = client.db("flixnomad");
