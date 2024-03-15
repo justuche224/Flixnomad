@@ -91,8 +91,8 @@ const MoviesDetailsPage = ({ movie }) => {
         <div className="w-full md:w-1/2">
           <Image
             src={movie.image}
-            width={100}
-            height={100}
+            width={400}
+            height={500}
             className="mx-auto rounded-lg"
             alt={movie.name}
             style={{ width: "90%", height: "auto" }}

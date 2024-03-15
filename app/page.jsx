@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import { moviesdb } from "@/database/db-main-movie";
 import { MovieCarousel } from "@/components/movies/MovieCarousel";
 import { baseUrl } from "@/utils/baseUrl";
-import Link from "next/link";
 
 async function getData(perPage, page) {
   try {

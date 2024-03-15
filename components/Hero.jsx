@@ -9,76 +9,69 @@ const Hero = () => {
   const heroRef = useRef(null);
   const [hero, setHero] = useState([
     {
-      id: "Dune-Part-Two",
-      image: "https://i.ibb.co/MhYJqfq/dune-part-two-2024.jpg",
-      name: "Dune Part Two",
+      _id: "65f46cf0da84acaaa19daf3e",
+      image: "https://i.postimg.cc/s2XHRWc6/Dune-Part-2-Poster-via-IMDb.jpg",
+      name: "Dune: Part Two 2024",
       details:
         "Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the universe, he must prevent a terrible future only he can foresee.",
-      downloadLink: "page.html?id=Barbie-2023",
-      trailer: "https://www.youtube.com/embed/U2Qp5pL3ovA",
-      genre: {
-        genre1: "Action",
-        genre2: "Adventure",
-        genre3: "Drama",
-      },
-      ratings: {
-        dataTitle: "tt1517268",
-        alt: "Barbie (2023) on IMDb",
-      },
+      downloadLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      trailer: "https://youtu.be/Way9Dexny3w?si=7SFv888VO3yfFo4g",
+      genre: { genre1: "Action", genre2: "Adventure", genre3: "Drama" },
       releaseDate: "1 March 2024",
       runtime: "2h 46m",
       director: "Denis Villeneuve",
       rated: "PG-13",
       type: "movie",
+      createdAt: "2024-03-15T15:36:41.323Z",
     },
     {
-      id: "Mission-Impossible-Dead-Reckoning-Part-One-2023",
+      _id: "65f479e7da0dfd91e43bc9b1",
+      image: "https://i.postimg.cc/4yxdgtw3/photo-2024-03-13-13-59-02.jpg",
+      name: "Shogun 2024",
+      details:
+        "Set in Japan in the year 1600, Lord Yoshii Toranaga is fighting for his life as his enemies on the Council of Regents unite against him, when a mysterious European ship is found marooned in a nearby fishing village.",
+      downloadLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      trailer: "https://youtu.be/yAN5uspO_hk?si=cToMUhDsFLcBBDP0",
+      genre: { genre1: "Adventure", genre2: "Drama", genre3: "History" },
+      releaseDate: "27 February 2024",
+      runtime: "",
+      director: "",
+      rated: "TV-14",
+      type: "series",
+      createdAt: "2024-03-15T16:39:40.435Z",
+    },
+    {
+      _id: "65f47179da0dfd91e43bc9ae",
       image:
-        "https://i.ibb.co/4sy2ws9/MV5-BYz-Fi-Zjc1-Yzct-MDY3-Zi00-NGE5-LTlm-NWEt-N2-Q3-OWFj-Yj-Y1-NGM2-Xk-Ey-Xk-Fqc-Gde-QXVy-MTUy-MTUz.jpg",
-      name: "Mission: Impossible - Dead Reckoning Part One 2023",
+        "https://i.postimg.cc/8kLxDS9d/MV5-BYWJk-Y2-Q4-Nm-Yt-OGRl-Mi00-YTg5-LWE2-Zm-Qt-Y2-Nk-Yzk3-YTRm-NWZl-Xk-Ey-Xk-Fqc-Gde-QXVy-MTY3-ODky-NDkz-V1-FMjpg-UX1000.jpg",
+      name: "Madame Web 2024",
       details:
-        "Ethan Hunt and his IMF team must track down a dangerous weapon before it falls into the wrong hands.",
-      downloadLink: "https://www.google.com",
-      trailer: "https://www.youtube.com/embed/94ceNwopotk",
-      genre: {
-        genre1: "Action",
-        genre2: "Adventure",
-        genre3: "Thriller",
-      },
-      ratings: {
-        dataTitle: "tt9603212",
-        alt: "Mission: Impossible - Dead Reckoning Part One (2023) on IMDb",
-      },
-      releaseDate: "13 / 7 / 2023 (Germany)",
-      runtime: "2h 43min",
-      director: "Christopher McQuarrie",
+        "Cassandra Webb is a New York City paramedic who starts to show signs of clairvoyance. Forced to confront revelations about her past, she must protect three young women from a mysterious adversary who wants them dead.",
+      downloadLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      trailer: "https://youtu.be/WAyzEOeeBZw?si=f9D6QPgwcByw5jUA",
+      genre: { genre1: "Action", genre2: "Adventure", genre3: "Sci-Fi" },
+      releaseDate: "16 February 2024",
+      runtime: "1h 56m",
+      director: "S.J. Clarkson",
       rated: "PG-13",
-      movieLink: "page.html?id=Mission-Impossible-Dead-Reckoning-Part-One-2023",
       type: "movie",
+      createdAt: "2024-03-15T16:03:46.018Z",
     },
     {
-      id: "Nimona-2023",
-      image: "https://i.ibb.co/S68hKpQ/IMG-20230811-071832-578.jpg",
-      name: "Nimona 2023",
+      _id: "65f4757bda0dfd91e43bc9af",
+      image: "https://i.postimg.cc/7h921wt5/photo-2024-01-12-19-15-51.jpg",
+      name: " Players 2024",
       details:
-        "When a knight in a futuristic medieval world is framed for a crime he didn't commit, the only one who can help him prove his innocence is Nimona -- a mischievous teen who happens to be a shapeshifting creature he's sworn to destroy.",
-      downloadLink: "https://www.google.com",
-      trailer: "https://www.youtube.com/embed/",
-      genre: {
-        genre1: "Animation",
-        genre2: "Action",
-        genre3: "Comedy",
-      },
-      ratings: {
-        dataTitle: "tt19500164",
-        alt: "Nimona (2023) on IMDb",
-      },
-      releaseDate: "30 / 6 / 2023 (Germany)",
-      runtime: "1h 41min",
-      director: "Nick Bruno Troy Quane",
-      rated: "PG",
-      movieLink: "page.html?id=Nimona-2023",
+        "New York sportswriter Mack devises successful hookup techniques with friend Adam and their crew, but when she unexpectedly falls head over heels for one of her targets, they all must learn what it takes to go from simply scoring to playing for keeps.",
+      downloadLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      trailer: "https://youtu.be/8gH6AEBwEAw?si=1hA8Arq0-bCLonbP",
+      genre: { genre1: "Comedy", genre2: "Romance", genre3: "" },
+      releaseDate: "14 February 2024 ",
+      runtime: "1h 45m",
+      director: "Trish Sie",
+      rated: "TV-MA",
       type: "movie",
+      createdAt: "2024-03-15T16:20:55.104Z",
     },
   ]);
 
@@ -167,7 +160,7 @@ const Hero = () => {
           <p className="sm:w-[50%] w-full text-slate-200 my-4 lg:text-lg text-xs font-bold">
             {hero[currentHeroIndex].details}
           </p>
-          <Link href={`/movies/${hero[currentHeroIndex].id}`}>
+          <Link href={`/movies/${hero[currentHeroIndex]._id}`}>
             <button
               type="button"
               aria-label={`download ${hero[currentHeroIndex].name}`}

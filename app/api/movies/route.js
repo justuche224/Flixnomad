@@ -14,6 +14,7 @@ export const GET = async (req, res) => {
     const items = await db
       .collection("movies")
       .find({})
+      .sort({ createdAt: -1 })
       .skip(perPage * (page - 1))
       .limit(perPage)
       .toArray();

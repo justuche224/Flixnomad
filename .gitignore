@@ -6,7 +6,11 @@
 .pnp.js
 .yarn/install-state.gz
 
+# personal
 .env
+/app/admin
+/app/api/admin
+/components/Form.jsx
 
 # testing
 /coverage

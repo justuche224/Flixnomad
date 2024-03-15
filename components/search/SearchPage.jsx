@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import MoviesList from "../movies/MovieList";
 import BackButton from "@/utils/BackButton";
 import { Telegram } from "@/utils/telegram";
+import Movies from "../movies/Movies";
 
 const SearchPage = ({ params, movies }) => {
   const [searchResults, setSearchResults] = useState([]);
@@ -30,7 +30,7 @@ const SearchPage = ({ params, movies }) => {
       <hr className="my-4" />
       {searchResults.length ? (
         <div>
-          <MoviesList movies={searchResults} />
+          <Movies movies={searchResults} />
         </div>
       ) : (
         <div>

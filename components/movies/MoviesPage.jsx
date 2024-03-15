@@ -117,7 +117,7 @@ const MoviesPage = ({ type }) => {
       </div>
       <div className="movieList">
         {errorMessage ? (
-          <div>
+          <div className="text-center my-5">
             <h3>Something went wrong</h3>
           </div>
         ) : (

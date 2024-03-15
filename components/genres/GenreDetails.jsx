@@ -81,7 +81,7 @@ const GenreDetails = ({ genre, params }) => {
           {genre.map((movie, index) => (
             <Link
               key={index}
-              href={`/movies/${movie.id}`}
+              href={`/movies/${movie._id}`}
               className="underline text-gray-200"
             >
               <li className="py-3">{movie.name}</li>
