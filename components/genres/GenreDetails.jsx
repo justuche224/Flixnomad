@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const GenreDetails = ({ genre, params }) => {
@@ -82,9 +83,23 @@ const GenreDetails = ({ genre, params }) => {
             <Link
               key={index}
               href={`/movies/${movie._id}`}
-              className="underline text-gray-200"
+              className="text-gray-200"
             >
-              <li className="py-3">{movie.name}</li>
+              <li className="p-1 my-2 flex gap-2 w-full bg-[#090e3b] hover:shadow-md hover:shadow-[#90afe9]">
+                <Image
+                  src={movie.image}
+                  height={90}
+                  width={100}
+                  alt={movie.name}
+                  className="rounded-md min-w-[90px] min-h-[100px] "
+                />
+                <div>
+                  <span className="text-lg text-red-500 font-bold">
+                    {movie.name}
+                  </span>
+                  <span className="text-xs ellipse">{movie.details}</span>
+                </div>
+              </li>
             </Link>
           ))}
         </ul>

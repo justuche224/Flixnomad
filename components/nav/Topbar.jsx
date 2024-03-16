@@ -1,13 +1,13 @@
 "use client";
-
 import Image from "next/image";
 import styles from "./topbar.module.css";
-import { FaBars, FaFilm, FaHome, FaList, FaTimes, FaTv } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import SearchBar from "../search/SearchBar";
 import { Telegram } from "@/utils/telegram";
+// import Menu from "./Menu";
 
 const Topbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,7 +23,7 @@ const Topbar = () => {
           <FaBars size={32} onClick={toggleMenu} className="cursor-pointer" />
         </button>
         <div>
-          <ul className="text-lg lg:flex gap-5 hidden">
+          <ul className="text-base lg:flex gap-5 hidden">
             <li className="my-3 ">
               <Link
                 onClick={toggleMenu}
@@ -69,6 +69,9 @@ const Topbar = () => {
                 Genres
               </Link>
             </li>
+            {/* <li className="my-3">
+              <Menu />
+            </li> */}
             <li className="my-3">
               <SearchBar isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
             </li>
@@ -110,6 +113,9 @@ const Topbar = () => {
           </Link>
         </div>
         <SearchBar isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
+        {/* <div className="flex place-content-center mt-2">
+        <Menu /> 
+      </div> */}
         <ul className={styles.mobileMenu}>
           <Link
             onClick={toggleMenu}

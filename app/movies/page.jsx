@@ -1,7 +1,7 @@
 import MoviesPage from "@/components/movies/MoviesPage";
 import Link from "next/link";
 
-export default async function page() {
+export default function page() {
   return (
     <div className="mt-[5rem]">
       <nav className="flex justify-center mb-5" aria-label="Breadcrumb">
