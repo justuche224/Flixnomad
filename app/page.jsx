@@ -15,9 +15,7 @@ export default async function Home({ searchParams }) {
       >
         Place Your Ads here
       </div> */}
-      <h2 id="movies" className="text-xl text-center">
-        Latest Uploads
-      </h2>
+      <div id="movies" className="w-full h-12"></div>
       <MovieList searchParams={searchParams} />
       <hr className="my-5" />
     </main>
