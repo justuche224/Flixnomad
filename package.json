@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "lodash": "^4.17.21",
     "mongodb": "^6.4.0",
     "mongoose": "^8.2.1",
     "next": "14.1.3",

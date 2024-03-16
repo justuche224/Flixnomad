@@ -1,22 +1,7 @@
 import MoviesPage from "@/components/movies/MoviesPage";
 import Link from "next/link";
 
-async function getData(perPage, page) {
-  try {
-    const response = await fetch(`${baseUrl}/api/movies/fun?page=${page}`, {
-      method: "GET",
-    });
-    if (!response.ok) {
-      throw new Error(`HTTP error ${response.status}`);
-    }
-    return response.json();
-  } catch (error) {
-    console.error("(home page)Error fetching movies:", error);
-    return { error: "(home page)Failed to load movies" };
-  }
-}
-
-export default async function page({ searchParams }) {
+export default async function page() {
   return (
     <div className="mt-[5rem]">
       <nav className="flex justify-center mb-5" aria-label="Breadcrumb">
