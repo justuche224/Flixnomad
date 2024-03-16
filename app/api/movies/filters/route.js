@@ -31,7 +31,6 @@ export const GET = async (req) => {
     // Perform filtered query in MongoDB
     const filteredMovies = await db
       .collection("movies")
-      .sort({ createdAt: -1 })
       .aggregate(query)
       .toArray();
 
