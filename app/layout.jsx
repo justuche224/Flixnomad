@@ -37,6 +37,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <meta name="google-adsense-account" content="ca-pub-3833965669330090" />
         <link rel="icon" href="./favicon.ico" sizes="any" />
       </head>
       <body className="bg-[#00031c] text-white pt-sans-regular">
