@@ -24,11 +24,15 @@ const Topbar = () => {
         </button>
         <div>
           <ul className="text-base lg:flex gap-5 hidden">
-            <li className="my-3 ">
+            <li className="my-3">
               <Link
                 onClick={toggleMenu}
                 href="/"
-                className={currentPath === "/" ? "font-bold text-red-500" : ""}
+                className={
+                  currentPath === "/"
+                    ? "border border-transparent px-3 py-1 rounded-md text-red-500 bg-transparent border-red-500"
+                    : "bg-red-500 border border-transparent px-3 py-1 rounded-md hover:text-red-500 hover:bg-transparent hover:border hover:border-red-500 transition-all duration-300"
+                }
               >
                 Home
               </Link>
@@ -39,7 +43,9 @@ const Topbar = () => {
                 onClick={toggleMenu}
                 href="/movies"
                 className={
-                  currentPath === "/movies" ? "font-bold text-red-500" : ""
+                  currentPath === "/movies"
+                    ? "border border-transparent px-3 py-1 rounded-md text-red-500 bg-transparent border-red-500"
+                    : "bg-red-500 border border-transparent px-3 py-1 rounded-md hover:text-red-500 hover:bg-transparent hover:border hover:border-red-500 transition-all duration-300"
                 }
               >
                 Movies
@@ -51,10 +57,12 @@ const Topbar = () => {
                 onClick={toggleMenu}
                 href="/series"
                 className={
-                  currentPath === "/series" ? "font-bold text-red-500" : ""
+                  currentPath === "/series"
+                    ? "border border-transparent px-3 py-1 rounded-md text-red-500 bg-transparent border-red-500"
+                    : "bg-red-500 border border-transparent px-3 py-1 rounded-md hover:text-red-500 hover:bg-transparent hover:border hover:border-red-500 transition-all duration-300"
                 }
               >
-                Series & Tv Shows
+                Series
               </Link>
             </li>
 
@@ -63,7 +71,9 @@ const Topbar = () => {
                 onClick={toggleMenu}
                 href="/genres"
                 className={
-                  currentPath === "/genres" ? "font-bold text-red-500" : ""
+                  currentPath === "/genres"
+                    ? "border border-transparent px-3 py-1 rounded-md text-red-500 bg-transparent border-red-500"
+                    : "bg-red-500 border border-transparent px-3 py-1 rounded-md hover:text-red-500 hover:bg-transparent hover:border hover:border-red-500 transition-all duration-300"
                 }
               >
                 Genres

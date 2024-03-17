@@ -161,12 +161,14 @@ const MoviesDetailsPage = ({ movie }) => {
       <hr className="my-4" />
       <div>
         <div>
-          <button
-            type="button"
-            className="px-2 py-2 bg-red-600 w-full my-5 rounded"
-          >
-            Download
-          </button>
+          <Link href={`/download/${movie._id}`}>
+            <button
+              type="button"
+              className="bg-red-500 border border-transparent px-3 py-1 rounded-md hover:text-red-500 hover:bg-transparent hover:border hover:border-red-500 transition-all duration-300 w-full my-5"
+            >
+              Download
+            </button>
+          </Link>
         </div>
       </div>
     </div>

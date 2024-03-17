@@ -36,7 +36,7 @@ const SearchBar = ({ toggleMenu, isMenuOpen }) => {
           <button
             type="submit"
             aria-label="submit"
-            className="bg-red-500 px-2 rounded-full text-center"
+            className="bg-red-500 border border-transparent px-3 py-1 rounded-md hover:text-red-500 hover:bg-transparent hover:border hover:border-red-500 transition-all duration-300 text-center"
           >
             <FaSearch />
           </button>

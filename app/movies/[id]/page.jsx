@@ -42,6 +42,25 @@ export async function generateMetadata({ params }) {
   return {
     title: `Download ${movie.name}`,
     description: `Download ${movie.name} in all qualities 2160p 1080p 720p 480p`,
+    keywords: [
+      `Dowbload ${movie.name}`,
+      `Dowbload ${movie.name} HD`,
+      `${movie.name} Download`,
+      `watch ${movie.name}`,
+      `Stream ${movie.name}`,
+    ],
+    openGraph: {
+      title: `${movie.name} - Flixnomad`,
+      description: `Download ${movie.name} in all qualities 2160p 1080p 720p 480p`,
+      images: [
+        {
+          url: `${movie.image}`,
+        },
+      ],
+      url: "https://flixnomad.vercel.app",
+      siteName: "Flixnomad",
+      type: "website",
+    },
   };
 }
 
