@@ -55,6 +55,8 @@ export async function generateMetadata({ params }) {
       images: [
         {
           url: `${movie.image}`,
+          width: 800,
+          height: 100,
         },
       ],
       url: "https://flixnomad.vercel.app",

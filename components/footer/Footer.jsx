@@ -14,16 +14,9 @@ const Footer = () => {
         <Link className="mx-2 hover:text-red-500" href="/about">
           About Us
         </Link>
-        <Link className="mx-2 hover:text-red-500" href="/help">
-          Help
-        </Link>
         <Link className="mx-2 hover:text-red-500" href="/contact">
           Contact Us
         </Link>
-        <Link className="mx-2 hover:text-red-500" href="/disclaimer">
-          Disclaimer
-        </Link>
-
         <Link className="mx-2 hover:text-red-500" href="/faq">
           F.A.Q.
         </Link>
