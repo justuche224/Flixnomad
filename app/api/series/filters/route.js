@@ -12,8 +12,13 @@ export const GET = async (req) => {
     // Construct filtered query with MongoDB aggregation
     const query = [
       {
+        $sort: {
+          createdAt: -1, // Sort in descending order by createdAt timestamp
+        },
+      },
+      {
         $match: {
-          type: "series",
+          type: "movie",
           ...(genreFilter !== "all" && {
             $or: [
               { "genre.genre1": { $regex: genreFilter, $options: "i" } },

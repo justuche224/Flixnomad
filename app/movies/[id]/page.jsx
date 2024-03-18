@@ -41,7 +41,9 @@ export async function generateMetadata({ params }) {
   }
   return {
     title: `Download ${movie.name}`,
-    description: `Download ${movie.name} in all qualities 2160p 1080p 720p 480p`,
+    description: `Download ${movie.name} ${
+      movie.type == series ? movie.runtime : null
+    }`,
     keywords: [
       `Dowbload ${movie.name}`,
       `Dowbload ${movie.name} HD`,
