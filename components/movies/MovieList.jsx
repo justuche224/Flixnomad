@@ -12,7 +12,7 @@ const MoviesList = ({ searchParams }) => {
   const [loading, setLoading] = useState(true);
   let page = parseInt(searchParams.page, 10);
   page = !page || page < 1 ? 1 : page;
-  const perPage = 10;
+  const perPage = 20;
 
   useEffect(() => {
     async function fetchMovies(page, perPage) {

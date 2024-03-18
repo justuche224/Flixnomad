@@ -9,20 +9,27 @@ const Hero = () => {
   const heroRef = useRef(null);
   const [hero, setHero] = useState([
     {
-      _id: "65f46cf0da84acaaa19daf3e",
-      image: "https://i.postimg.cc/s2XHRWc6/Dune-Part-2-Poster-via-IMDb.jpg",
-      name: "Dune: Part Two 2024",
+      _id: "65f7dbf2dd2dea72c7796402",
+      image:
+        "https://i.postimg.cc/9FgSM8Zg/MV5-BNTZm-ZDU3-ODEt-Nj-Jh-Ny00-Yz-Bk-LWI1-ODQt-OGRm-NWU1-OGIw-N2-Vk-Xk-Ey-Xk-Fqc-Gde-QXVy-Nj-I4-NDY5-ODM-V1.jpg",
+      name: "Alienoid: Return to the Future 2024",
       details:
-        "Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the universe, he must prevent a terrible future only he can foresee.",
-      downloadLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      trailer: "https://youtu.be/Way9Dexny3w?si=7SFv888VO3yfFo4g",
-      genre: { genre1: "Action", genre2: "Adventure", genre3: "Drama" },
-      releaseDate: "1 March 2024",
-      runtime: "2h 46m",
-      director: "Denis Villeneuve",
-      rated: "PG-13",
+        "Ancient Taoists travel through time and space in an effort to obtain a divine sword.",
+      downloadLink:
+        "https://mega.nz/file/3IhgWYDT#Z7DafPta0eT1cNyu_i3EQ2eK8FTT5k7wwmP4I6vtz-Y",
+      trailer: "https://youtu.be/snjYMx5A7KU?si=Dhy0JcEHSKgpxvVt",
+      genre: {
+        genre1: "Action",
+        genre2: "Fantasy",
+        genre3: "Sci-Fi",
+      },
+      releaseDate: "10 January 2024",
+      runtime: " 2h 2m",
+      director: "Choi Dong-hoon",
+      rated: "",
       type: "movie",
-      createdAt: "2024-03-15T15:36:41.323Z",
+      quality: "480p",
+      createdAt: "2024-03-18T06:15:14.555Z",
     },
     {
       _id: "65f479e7da0dfd91e43bc9b1",

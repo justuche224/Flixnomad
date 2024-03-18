@@ -1,14 +1,14 @@
 export const moviesdb = [
   {
-    id: "65f46cf0da84acaaa19daf3e",
-    image: "https://i.postimg.cc/s2XHRWc6/Dune-Part-2-Poster-via-IMDb.jpg",
-    name: "Dune Part Two",
+    id: "65f7dadadd2dea72c7796401",
+    image: "https://i.postimg.cc/8zMKwKQ5/ems.jpg",
+    name: "Anyone but You 2023",
   },
   {
-    id: "65f46cf0da84acaaa19daf3f",
+    id: "65f7dbf2dd2dea72c7796402",
     image:
-      "https://i.postimg.cc/PJx5W2zb/MV5-BZDY0-Yz-I0-OTct-Yj-Vh-Yy00-MTVh-LWE0-NTgt-YTRm-YTBm-OTE3-YTVi-Xk-Ey-Xk-Fqc-Gde-QXVy-MTUz-MTg2-ODkz-V1-FMjpg-UX1000.jpg",
-    name: "Kung Fu Panda 4 2024",
+      "https://i.postimg.cc/9FgSM8Zg/MV5-BNTZm-ZDU3-ODEt-Nj-Jh-Ny00-Yz-Bk-LWI1-ODQt-OGRm-NWU1-OGIw-N2-Vk-Xk-Ey-Xk-Fqc-Gde-QXVy-Nj-I4-NDY5-ODM-V1.jpg",
+    name: "Alienoid: Return to the Future 2024",
   },
   {
     id: "65f46cf0da84acaaa19daf40",
