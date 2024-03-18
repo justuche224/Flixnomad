@@ -1,6 +1,7 @@
 import Topbar from "@/components/nav/Topbar";
 import "./globals.css";
 import Footer from "@/components/footer/Footer";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "Flixnomad: HD Movies & TV Shows",
@@ -52,6 +53,7 @@ export default function RootLayout({ children }) {
         <footer>
           <Footer />
         </footer>
+        <Analytics />
       </body>
     </html>
   );
