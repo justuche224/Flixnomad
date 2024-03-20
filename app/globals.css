@@ -135,3 +135,20 @@ body {
 .genre-image img {
   height: calc(90px + 5vw);
 }
+
+@keyframes pulse {
+  0% {
+    background-color: rgb(255, 255, 255);
+  }
+  50% {
+    background-color: rgb(199, 199, 199);
+  }
+  100% {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+.loader {
+  background-color: white;
+  animation: pulse 1.4s infinite ease-in-out;
+}

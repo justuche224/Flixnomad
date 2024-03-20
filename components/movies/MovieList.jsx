@@ -5,6 +5,7 @@ import Link from "next/link";
 import { FaClock, FaFolder } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import Loader from "../Loader/Loader";
+import Skeleton from "../Loader/Skeleton";
 
 const MoviesList = ({ searchParams }) => {
   const [data, setData] = useState({});
@@ -44,11 +45,7 @@ const MoviesList = ({ searchParams }) => {
   const nextPage = page + 1;
 
   if (loading) {
-    return (
-      <div className="grid place-content-center my-3">
-        <Loader />
-      </div>
-    );
+    return <Skeleton />;
   }
 
   if (error) {
