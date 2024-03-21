@@ -1,5 +1,10 @@
 export const moviesdb = [
   {
+    id: "65fbd783d6c553314259e12d",
+    image: "https://i.postimg.cc/65rgBLGG/photo-2024-03-21-07-37-13.jpg",
+    name: "Bob Marley: One Love 2024",
+  },
+  {
     id: "65f7dadadd2dea72c7796401",
     image: "https://i.postimg.cc/8zMKwKQ5/ems.jpg",
     name: "Anyone but You 2023",
@@ -36,11 +41,6 @@ export const moviesdb = [
     id: "65f479e7da0dfd91e43bc9b1",
     image: "https://i.postimg.cc/4yxdgtw3/photo-2024-03-13-13-59-02.jpg",
     name: "Shogun 2024",
-  },
-  {
-    id: "65f580603e419f3c2faa5885",
-    image: "https://i.postimg.cc/fy6C7h5h/download.jpg",
-    name: "Avatar: The Last Airbender 2024",
   },
   {
     id: "65f57ea03e419f3c2faa5884",

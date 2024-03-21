@@ -3,7 +3,7 @@ import { ObjectId } from "mongodb";
 import MovieInfo from "@/components/movies/MovieInfo";
 import { connectToDatabase } from "@/utils/database";
 import Faq from "@/components/Faq";
-import { FaTelegram } from "react-icons/fa";
+import DownloadLink from "@/components/DownloadLink";
 
 async function FindMovie(id) {
   try {
@@ -39,13 +39,7 @@ async function FindMovie(id) {
           </h2>
         ) : null}
         <div className="grid place-content-center">
-          <Link
-            className="my-2 text-center bg-red-500 border border-transparent px-3 py-1 rounded-md hover:text-red-500 hover:bg-transparent hover:border hover:border-red-500 transition-all duration-300"
-            href={movie.downloadLink}
-            target="_blank"
-          >
-            Download
-          </Link>
+          <DownloadLink downloadLink={movie.downloadLink} />
           <Link
             className="my-2 text-center italic text-xs text-gray-300"
             href="/contact"
@@ -68,7 +62,7 @@ async function FindMovie(id) {
   } catch (error) {
     return (
       <div className="text-center">
-        <h2>An Error occurred</h2>
+        <h2>Error fetching download link</h2>
       </div>
     );
   }
