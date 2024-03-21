@@ -2,7 +2,6 @@ import Topbar from "@/components/nav/Topbar";
 import "./globals.css";
 import Footer from "@/components/footer/Footer";
 import { Analytics } from "@vercel/analytics/react";
-import Script from "next/script";
 
 export const metadata = {
   title: "Flixnomad: HD Movies & TV Shows",
@@ -55,10 +54,7 @@ export default function RootLayout({ children }) {
         <main className="block md:flex gap-5 min-h-screen">
           <section className="w-full">{children}</section>
         </main>
-        <div id="foremediaads-footer_float"></div>
-        <Script src="https://platform.foremedia.net/code/42904/footer_float" />
-        <div id="foremediaads-pop_ads"></div>
-        <Script src="https://platform.foremedia.net/code/42904/pop_ads" />
+
         <footer>
           <Footer />
         </footer>

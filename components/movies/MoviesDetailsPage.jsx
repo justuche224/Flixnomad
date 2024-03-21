@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 
 const MoviesDetailsPage = ({ movie }) => {
   return (
@@ -171,6 +172,10 @@ const MoviesDetailsPage = ({ movie }) => {
           </Link>
         </div>
       </div>
+      <div id="foremediaads-e1"></div>
+      <Script src="https://platform.foremedia.net/code/42904/e1" />
+      <div id="foremediaads-pop_ads"></div>
+      <Script src="https://platform.foremedia.net/code/42904/pop_ads" />
     </div>
   );
 };
