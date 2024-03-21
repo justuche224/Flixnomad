@@ -40,6 +40,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="icon" href="./favicon.ico" sizes="any" />
+<script type='text/javascript' src='//pl22852390.profitablegatecpm.com/53/4a/c7/534ac7ceaddae4350e5227cba8a0fa2f.js'></script>
       </head>
       <body className="bg-[#00031c] text-white pt-sans-regular">
         <header>
