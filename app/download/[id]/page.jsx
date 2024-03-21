@@ -4,7 +4,6 @@ import MovieInfo from "@/components/movies/MovieInfo";
 import { connectToDatabase } from "@/utils/database";
 import Faq from "@/components/Faq";
 import DownloadLink from "@/components/DownloadLink";
-import Script from "next/script";
 
 async function FindMovie(id) {
   try {
@@ -75,10 +74,6 @@ export default async function page({ params }) {
     <div className="mt-[5rem] max-w-4xl mx-auto">
       <div>{Movie}</div>
       <hr className="h-1 my-10" />
-      <div id="foremediaads-e1"></div>
-      <Script src="https://platform.foremedia.net/code/42904/e1" />
-      <div id="foremediaads-pop_ads"></div>
-      <Script src="https://platform.foremedia.net/code/42904/pop_ads" />
       <h2 className="text-center">Frequently Asked questions</h2>
       <div>
         <Faq />

@@ -2,6 +2,7 @@ import Topbar from "@/components/nav/Topbar";
 import "./globals.css";
 import Footer from "@/components/footer/Footer";
 import { Analytics } from "@vercel/analytics/react";
+import Script from "next/script";
 
 export const metadata = {
   title: "Flixnomad: HD Movies & TV Shows",
@@ -38,11 +39,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <script
-          type="text/javascript"
-          async
-          src="https://platform.foremedia.net/code/42904/analytics"
-        ></script>
         <link rel="icon" href="./favicon.ico" sizes="any" />
       </head>
       <body className="bg-[#00031c] text-white pt-sans-regular">
@@ -54,7 +50,12 @@ export default function RootLayout({ children }) {
         <main className="block md:flex gap-5 min-h-screen">
           <section className="w-full">{children}</section>
         </main>
-
+        <Script
+          async="async"
+          data-cfasync="false"
+          src="//pl22851714.profitablegatecpm.com/db1ec6b49cd714ed8f3a8404edb1fa73/invoke.js"
+        />
+        <div id="container-db1ec6b49cd714ed8f3a8404edb1fa73"></div>
         <footer>
           <Footer />
         </footer>
