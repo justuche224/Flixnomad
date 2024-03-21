@@ -22,7 +22,7 @@ export const metadata = {
       "Download Movies and Tv shows in all qualities 2160p 1080p 720p 480p.",
     images: [
       {
-        url: "/logo-st.png",
+        url: "/Netflix-Hintergrund.webp",
       },
     ],
     url: "https://flixnomad.vercel.app",
