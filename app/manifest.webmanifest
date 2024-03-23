@@ -1,0 +1,76 @@
+{
+  "name": "Flixnomad: HD Movies",
+  "short_name": "Flixnomad",
+  "theme_color": "#00031c",
+  "background_color": "#00031c",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "categories": ["Movies", "Tv shows", "Series", "Film"],
+  "description": "Download Movies and Tv shows in All qualities. 2160p 1080p 720p 480p.",
+  "icons": [
+    {
+      "src": "/manifest/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "/manifest/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/manifest/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/manifest/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/manifest/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "/manifest/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/manifest/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/manifest/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/assets/flixnomad.vercel.app_(iPhone_14_Pro_Max).png",
+      "sizes": "1290x2796",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/flixnomad.vercel.app_(iPhone_14_Pro_Max)2.png",
+      "sizes": "1290x2796",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/flixnomad.vercel.app_(iPad_Air).png",
+      "sizes": "1640x2360",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/flixnomad.vercel.app_(Nest_Hub).png",
+      "sizes": "2048x1200",
+      "type": "image/png"
+    }
+  ]
+}

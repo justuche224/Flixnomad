@@ -1,0 +1,46 @@
+.background {
+  height: 3.5rem;
+  width: 100%;
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  backdrop-filter: blur(20px) saturate(180%);
+  background-color: #00031c94;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  border-bottom: 1px solid #f44336;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #00031c94;
+  -webkit-backdrop-filter: blur(15px) saturate(180%);
+  backdrop-filter: blur(15px) saturate(180%);
+  padding: 10px;
+  z-index: 10000;
+  transform: translateX(-120%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.mobileMenu {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
+.mobileMenu li:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.mobileMenu li:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
