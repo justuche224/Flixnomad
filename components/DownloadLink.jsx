@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 
 const DownloadLink = ({ downloadLink }) => {
-  const [countdown, setCountdown] = useState(15);
+  const [countdown, setCountdown] = useState(20);
 
   useEffect(() => {
     const timer = setTimeout(() => {
