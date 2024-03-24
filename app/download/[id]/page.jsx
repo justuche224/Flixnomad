@@ -22,7 +22,7 @@ async function FindMovie(id) {
         </MovieInfo>
       );
     }
-    console.log(movie);
+    // console.log(movie);
     return (
       <MovieInfo>
         <h1 className="text-center text-3xl font-bold">
@@ -40,7 +40,7 @@ async function FindMovie(id) {
           </h2>
         ) : null} */}
         <div className="grid place-content-center">
-          <DownloadLink downloadLinks={movie.downloadLinks} />
+          <DownloadLink downloadLink={movie.downloadLink} />
           <Link
             className="my-2 text-center italic text-xs text-gray-300"
             href="/contact"
