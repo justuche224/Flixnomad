@@ -8,7 +8,7 @@ const MovieForm = () => {
     image: "",
     name: "",
     details: "",
-    downloadLinks: [{ name: "", link: "" }],
+    downloadLink: [{ name: "", link: "" }],
     trailer: "",
     genre: {
       genre1: "",
@@ -25,11 +25,11 @@ const MovieForm = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    if (name.startsWith("downloadLinks.")) {
+    if (name.startsWith("downloadLink.")) {
       const [, index, key] = name.split(".");
       setFormData((prevState) => ({
         ...prevState,
-        downloadLinks: prevState.downloadLinks.map((link, i) =>
+        downloadLink: prevState.downloadLink.map((link, i) =>
           i === parseInt(index) ? { ...link, [key]: value } : link
         ),
       }));
@@ -67,7 +67,7 @@ const MovieForm = () => {
           image: "",
           name: "",
           details: "",
-          downloadLinks: [{ name: "", link: "" }],
+          downloadLink: [{ name: "", link: "" }],
           trailer: "",
           genre: {
             genre1: "",
@@ -135,12 +135,12 @@ const MovieForm = () => {
         <br />
         <div>
           <label className="block">Download Links:</label>
-          {formData.downloadLinks.map((link, index) => (
+          {formData.downloadLink.map((link, index) => (
             <div key={index} className="">
               <div className="flex gap-2 items-center">
                 <input
                   type="text"
-                  name={`downloadLinks.${index}.name`}
+                  name={`downloadLink.${index}.name`}
                   value={link.name}
                   onChange={handleChange}
                   placeholder="Name"
@@ -148,7 +148,7 @@ const MovieForm = () => {
                 />
                 <input
                   type="text"
-                  name={`downloadLinks.${index}.link`}
+                  name={`downloadLink.${index}.link`}
                   value={link.link}
                   onChange={handleChange}
                   placeholder="Link"
@@ -156,14 +156,14 @@ const MovieForm = () => {
                 />
               </div>
               <br />
-              {index === formData.downloadLinks.length - 1 && (
+              {index === formData.downloadLink.length - 1 && (
                 <button
                   type="button"
                   onClick={() =>
                     setFormData((prevState) => ({
                       ...prevState,
-                      downloadLinks: [
-                        ...prevState.downloadLinks,
+                      downloadLink: [
+                        ...prevState.downloadLink,
                         { name: "", link: "" },
                       ],
                     }))
