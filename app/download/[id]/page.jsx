@@ -22,6 +22,7 @@ async function FindMovie(id) {
         </MovieInfo>
       );
     }
+    console.log(movie);
     return (
       <MovieInfo>
         <h1 className="text-center text-3xl font-bold">
@@ -31,15 +32,15 @@ async function FindMovie(id) {
           ) : null}{" "}
           <span className="ml-1 italic">{movie.quality}</span>
         </h1>
-        {movie.type == "series" ? (
+        {/* {movie.type == "series" ? (
           <h2 className="text-center text-sm font-bold italic text-red-200 my-2">
             Please note that series are currently available for download through
             a telegram bot. clcik the link and it will take you to a telegram
             bot, press start to download. sorry for any inconveniences
           </h2>
-        ) : null}
+        ) : null} */}
         <div className="grid place-content-center">
-          <DownloadLink downloadLink={movie.downloadLink} />
+          <DownloadLink downloadLinks={movie.downloadLinks} />
           <Link
             className="my-2 text-center italic text-xs text-gray-300"
             href="/contact"

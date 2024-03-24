@@ -8,7 +8,7 @@ const MovieForm = () => {
     image: "",
     name: "",
     details: "",
-    downloadLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    downloadLinks: [{ name: "", link: "" }],
     trailer: "",
     genre: {
       genre1: "",
@@ -25,7 +25,15 @@ const MovieForm = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    if (name.startsWith("genre.")) {
+    if (name.startsWith("downloadLinks.")) {
+      const [, index, key] = name.split(".");
+      setFormData((prevState) => ({
+        ...prevState,
+        downloadLinks: prevState.downloadLinks.map((link, i) =>
+          i === parseInt(index) ? { ...link, [key]: value } : link
+        ),
+      }));
+    } else if (name.startsWith("genre.")) {
       const genreName = name.split(".")[1];
       setFormData((prevState) => ({
         ...prevState,
@@ -59,7 +67,7 @@ const MovieForm = () => {
           image: "",
           name: "",
           details: "",
-          downloadLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+          downloadLinks: [{ name: "", link: "" }],
           trailer: "",
           genre: {
             genre1: "",
@@ -125,17 +133,49 @@ const MovieForm = () => {
           />
         </label>
         <br />
-        <label className="block">
-          Download Link:
-          <input
-            type="text"
-            name="downloadLink"
-            required
-            value={formData.downloadLink}
-            onChange={handleChange}
-            className="mt-1 text-black p-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
-          />
-        </label>
+        <div>
+          <label className="block">Download Links:</label>
+          {formData.downloadLinks.map((link, index) => (
+            <div key={index} className="">
+              <div className="flex gap-2 items-center">
+                <input
+                  type="text"
+                  name={`downloadLinks.${index}.name`}
+                  value={link.name}
+                  onChange={handleChange}
+                  placeholder="Name"
+                  className="mt-1 text-black p-1 flex-1 border-gray-300 rounded-md shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+                />
+                <input
+                  type="text"
+                  name={`downloadLinks.${index}.link`}
+                  value={link.link}
+                  onChange={handleChange}
+                  placeholder="Link"
+                  className="mt-1 text-black p-1 flex-1 border-gray-300 rounded-md shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+                />
+              </div>
+              <br />
+              {index === formData.downloadLinks.length - 1 && (
+                <button
+                  type="button"
+                  onClick={() =>
+                    setFormData((prevState) => ({
+                      ...prevState,
+                      downloadLinks: [
+                        ...prevState.downloadLinks,
+                        { name: "", link: "" },
+                      ],
+                    }))
+                  }
+                  className="bg-blue-500 text-white py-1 px-2 rounded-md hover:bg-blue-600"
+                >
+                  Add
+                </button>
+              )}
+            </div>
+          ))}
+        </div>
         <br />
         <label className="block">
           Trailer:
