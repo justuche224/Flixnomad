@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 
 const DownloadLink = ({ downloadLinks }) => {
-  console.log(downloadLinks);
+  // console.log(downloadLinks);
   const [countdown, setCountdown] = useState(15);
 
   useEffect(() => {
