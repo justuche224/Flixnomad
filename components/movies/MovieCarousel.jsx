@@ -11,7 +11,7 @@ export const MovieCarousel = ({ movies }) => {
           key={movie.name}
           className="rounded-md shadow-sm hover:shadow-md hover:shadow-[#90afe9] shadow-[#90afe9]"
         >
-          <Link href={`movies/${movie.id}`}>
+          <Link href={`movies/${movie.id}`} title={movie.name}>
             <Image
               src={movie.image}
               alt={movie.name}

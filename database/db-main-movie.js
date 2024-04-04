@@ -1,5 +1,20 @@
 export const moviesdb = [
   {
+    id: "65ffe55c6fd0ee359ccddc9c",
+    image: "https://i.postimg.cc/jSV8xCWf/photo-2024-03-23-22-57-38.jpg",
+    name: "3 Body Problem 2024 Season 1",
+  },
+  {
+    id: "65fdd4f2a35433eebcde7dda",
+    image: "https://i.postimg.cc/7YJscLx1/IMG-20240322-194910-487.jpg",
+    name: "The Casagrandes Movie 2024",
+  },
+  {
+    id: "65fc8390b32e885d1e6c9693",
+    image: "https://i.postimg.cc/TwGBtK64/IMG-20240321-194359-102.jpg",
+    name: "Road House 2024",
+  },
+  {
     id: "65fbd783d6c553314259e12d",
     image: "https://i.postimg.cc/65rgBLGG/photo-2024-03-21-07-37-13.jpg",
     name: "Bob Marley: One Love 2024",
@@ -15,33 +30,21 @@ export const moviesdb = [
       "https://i.postimg.cc/9FgSM8Zg/MV5-BNTZm-ZDU3-ODEt-Nj-Jh-Ny00-Yz-Bk-LWI1-ODQt-OGRm-NWU1-OGIw-N2-Vk-Xk-Ey-Xk-Fqc-Gde-QXVy-Nj-I4-NDY5-ODM-V1.jpg",
     name: "Alienoid: Return to the Future 2024",
   },
-  {
-    id: "65f46cf0da84acaaa19daf40",
-    image: "https://i.postimg.cc/851kRW2b/ashfjlv-JLGFJLASFUGASUGCUJA.jpg",
-    name: "The Tiger's Apprentice 2024",
-  },
+
   {
     id: "65f46cf0da84acaaa19daf42",
     image:
       "https://i.postimg.cc/vHp0cvnC/MV5-BMzky-OTUz-YTUt-Y2-Uz-YS00-Mj-Y4-LTlj-ZWYt-Yz-My-Mm-Zl-MWYw-Mj-Q5-Xk-Ey-Xk-Fqc-Gd.jpg",
     name: "Land of Bad 2024    ",
   },
-  {
-    id: "65f46cf0da84acaaa19daf47",
-    image: "https://i.ibb.co/r0ypyMV/IMG-20230809-034611-641.jpg",
-    name: "Fatal Seduction 2023",
-  },
+
   {
     id: "65f47179da0dfd91e43bc9ae",
     image:
       "https://i.postimg.cc/8kLxDS9d/MV5-BYWJk-Y2-Q4-Nm-Yt-OGRl-Mi00-YTg5-LWE2-Zm-Qt-Y2-Nk-Yzk3-YTRm-NWZl-Xk-Ey-Xk-Fqc-Gde-QXVy-MTY3-ODky-NDkz-V1-FMjpg-UX1000.jpg",
     name: "Madame Web 2024",
   },
-  {
-    id: "65f479e7da0dfd91e43bc9b1",
-    image: "https://i.postimg.cc/4yxdgtw3/photo-2024-03-13-13-59-02.jpg",
-    name: "Shogun 2024",
-  },
+
   {
     id: "65f57ea03e419f3c2faa5884",
     image:
