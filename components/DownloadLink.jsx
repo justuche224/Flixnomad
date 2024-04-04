@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 const DownloadLink = ({ downloadLink }) => {
   // console.log(downloadLinks);
-  const [countdown, setCountdown] = useState(15);
+  const [countdown, setCountdown] = useState(10);
 
   useEffect(() => {
     const timer = setTimeout(() => {
