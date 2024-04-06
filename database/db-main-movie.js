@@ -1,5 +1,10 @@
 export const moviesdb = [
   {
+    id: "65f46cf0da84acaaa19daf3e",
+    image: "https://i.postimg.cc/s2XHRWc6/Dune-Part-2-Poster-via-IMDb.jpg",
+    name: "Dune: Part Two 2024",
+  },
+  {
     id: "65ffe55c6fd0ee359ccddc9c",
     image: "https://i.postimg.cc/jSV8xCWf/photo-2024-03-23-22-57-38.jpg",
     name: "3 Body Problem 2024 Season 1",
@@ -61,10 +66,5 @@ export const moviesdb = [
     image:
       "https://i.postimg.cc/cLHXGr3J/MV5-BYm-Iz-NWNi-Njkt-NDM1-YS00-Yj-Yx-LThj-MDEt-Ym-E0-NWMw-NGE0-Zm-U0-Xk-Ey-Xk-Fqc-Gde-QXVy-MDM2-NDM2-MQ-V1.jpg",
     name: "Damsel 2024",
-  },
-  {
-    id: "65f57bc53e419f3c2faa5882",
-    image: "https://i.postimg.cc/VL0RL36q/images.jpg",
-    name: "Ricky Stanicky 2024",
   },
 ];

@@ -9,6 +9,40 @@ const Hero = () => {
   const heroRef = useRef(null);
   const [hero, setHero] = useState([
     {
+      _id: "65f46cf0da84acaaa19daf3e",
+      image: "https://i.postimg.cc/s2XHRWc6/Dune-Part-2-Poster-via-IMDb.jpg",
+      name: "Dune: Part Two 2024",
+      details:
+        "Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the universe, he must prevent a terrible future only he can foresee.",
+      downloadLink: [
+        {
+          name: "1080p",
+          link: "https://mega.nz/file/eDwCGBIC#J6iXBEsREGjHBlUUNhwXpzvds9jTRU_YAce4G2PzArM",
+        },
+        {
+          name: "720p",
+          link: "https://mega.nz/file/TGAQjJIA#Fwc5n2UT2hplTHbDGiczpJ3cQ-cG1gE5-oV5Z_AkFdw",
+        },
+        {
+          name: "480p",
+          link: "https://mega.nz/file/PCwFwLpC#ORkxnABHaRWP7OBEGtDSYzdBAt5OPscf0WUZReKf6mc",
+        },
+      ],
+      trailer: "https://youtu.be/Way9Dexny3w?si=7SFv888VO3yfFo4g",
+      genre: {
+        genre1: "Action",
+        genre2: "Adventure",
+        genre3: "Drama",
+      },
+      releaseDate: "1 March 2024",
+      runtime: "2h 46m",
+      director: "Denis Villeneuve",
+      rated: "PG-13",
+      type: "movie",
+      quality: "",
+      createdAt: "2024-03-15T15:36:41.323Z",
+    },
+    {
       _id: "65f7dbf2dd2dea72c7796402",
       image:
         "https://i.postimg.cc/9FgSM8Zg/MV5-BNTZm-ZDU3-ODEt-Nj-Jh-Ny00-Yz-Bk-LWI1-ODQt-OGRm-NWU1-OGIw-N2-Vk-Xk-Ey-Xk-Fqc-Gde-QXVy-Nj-I4-NDY5-ODM-V1.jpg",
@@ -63,22 +97,6 @@ const Hero = () => {
       rated: "PG-13",
       type: "movie",
       createdAt: "2024-03-15T16:03:46.018Z",
-    },
-    {
-      _id: "65f4757bda0dfd91e43bc9af",
-      image: "https://i.postimg.cc/7h921wt5/photo-2024-01-12-19-15-51.jpg",
-      name: " Players 2024",
-      details:
-        "New York sportswriter Mack devises successful hookup techniques with friend Adam and their crew, but when she unexpectedly falls head over heels for one of her targets, they all must learn what it takes to go from simply scoring to playing for keeps.",
-      downloadLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      trailer: "https://youtu.be/8gH6AEBwEAw?si=1hA8Arq0-bCLonbP",
-      genre: { genre1: "Comedy", genre2: "Romance", genre3: "" },
-      releaseDate: "14 February 2024 ",
-      runtime: "1h 45m",
-      director: "Trish Sie",
-      rated: "TV-MA",
-      type: "movie",
-      createdAt: "2024-03-15T16:20:55.104Z",
     },
   ]);
 
