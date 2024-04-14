@@ -1,5 +1,17 @@
 export const moviesdb = [
   {
+    id: "661bfe6c0ba225ab3c7520d6",
+    image:
+      "https://i.postimg.cc/JhS0cRDx/MV5-BN2-Ew-Nj-Fh-Mm-Et-ZDc4-YS00-OTUw-LTky-ODEt-Mz-Vi-Mzli-ZWIy-Mz-Yx-Xk-Ey-Xk-Fqc-Gde-QXVy-Mjkw-OTAy-MDU-V1.jpg",
+    name: "Fallout 2024",
+  },
+  {
+    id: "65f46cf0da84acaaa19daf3f",
+    image:
+      "https://i.postimg.cc/PJx5W2zb/MV5-BZDY0-Yz-I0-OTct-Yj-Vh-Yy00-MTVh-LWE0-NTgt-YTRm-YTBm-OTE3-YTVi-Xk-Ey-Xk-Fqc-Gde-QXVy-MTUz-MTg2-ODkz-V1-FMjpg-UX1000.jpg",
+    name: "Kung Fu Panda 4 2024",
+  },
+  {
     id: "65f46cf0da84acaaa19daf3e",
     image: "https://i.postimg.cc/s2XHRWc6/Dune-Part-2-Poster-via-IMDb.jpg",
     name: "Dune: Part Two 2024",
@@ -35,26 +47,11 @@ export const moviesdb = [
       "https://i.postimg.cc/9FgSM8Zg/MV5-BNTZm-ZDU3-ODEt-Nj-Jh-Ny00-Yz-Bk-LWI1-ODQt-OGRm-NWU1-OGIw-N2-Vk-Xk-Ey-Xk-Fqc-Gde-QXVy-Nj-I4-NDY5-ODM-V1.jpg",
     name: "Alienoid: Return to the Future 2024",
   },
-
-  {
-    id: "65f46cf0da84acaaa19daf42",
-    image:
-      "https://i.postimg.cc/vHp0cvnC/MV5-BMzky-OTUz-YTUt-Y2-Uz-YS00-Mj-Y4-LTlj-ZWYt-Yz-My-Mm-Zl-MWYw-Mj-Q5-Xk-Ey-Xk-Fqc-Gd.jpg",
-    name: "Land of Bad 2024    ",
-  },
-
   {
     id: "65f47179da0dfd91e43bc9ae",
     image:
       "https://i.postimg.cc/8kLxDS9d/MV5-BYWJk-Y2-Q4-Nm-Yt-OGRl-Mi00-YTg5-LWE2-Zm-Qt-Y2-Nk-Yzk3-YTRm-NWZl-Xk-Ey-Xk-Fqc-Gde-QXVy-MTY3-ODky-NDkz-V1-FMjpg-UX1000.jpg",
     name: "Madame Web 2024",
-  },
-
-  {
-    id: "65f57ea03e419f3c2faa5884",
-    image:
-      "https://i.postimg.cc/fRyJN0vk/AAAAQV-BRgcn-E4-ZI4pr-JF6-Dnb-Tbp-Kg-ZYu-B77-V-DCw-Qd4-EO-o-QMGlbah-AStlx-Uyq-Iaax-XD1-M2-e-N06m5-ERpd-R0c-LGH3i-HYWXYv-Bp.jpg",
-    name: "Code 8: Part II 2024",
   },
   {
     id: "65f57d9f3e419f3c2faa5883",

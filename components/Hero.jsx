@@ -9,6 +9,35 @@ const Hero = () => {
   const heroRef = useRef(null);
   const [hero, setHero] = useState([
     {
+      _id: {
+        $oid: "661bfe6c0ba225ab3c7520d6",
+      },
+      image:
+        "https://i.postimg.cc/JhS0cRDx/MV5-BN2-Ew-Nj-Fh-Mm-Et-ZDc4-YS00-OTUw-LTky-ODEt-Mz-Vi-Mzli-ZWIy-Mz-Yx-Xk-Ey-Xk-Fqc-Gde-QXVy-Mjkw-OTAy-MDU-V1.jpg",
+      name: "Fallout 2024",
+      details:
+        "In a future, post-apocalyptic Los Angeles brought about by nuclear decimation, citizens must live in underground bunkers to protect themselves from radiation, mutants and bandits.",
+      downloadLink: [
+        {
+          name: "Season 1",
+          link: "https://mega.nz/folder/FC0jVK7I#efTlu3i3NHsskkcNiOM1fA",
+        },
+      ],
+      trailer: "https://www.youtube.com/watch?v=V-mugKDQDlg",
+      genre: {
+        genre1: "Adventure",
+        genre2: "Drama",
+        genre3: "Sci-Fi",
+      },
+      releaseDate: "11 / 4 / 2024",
+      runtime: "",
+      director: "Geneva Robertson-Dworet Graham Wagner",
+      rated: "16",
+      type: "series",
+      quality: "720p",
+      createdAt: "2024-04-14T16:03:55.218Z",
+    },
+    {
       _id: "65f46cf0da84acaaa19daf3e",
       image: "https://i.postimg.cc/s2XHRWc6/Dune-Part-2-Poster-via-IMDb.jpg",
       name: "Dune: Part Two 2024",
@@ -80,23 +109,6 @@ const Hero = () => {
       rated: "TV-14",
       type: "series",
       createdAt: "2024-03-15T16:39:40.435Z",
-    },
-    {
-      _id: "65f47179da0dfd91e43bc9ae",
-      image:
-        "https://i.postimg.cc/8kLxDS9d/MV5-BYWJk-Y2-Q4-Nm-Yt-OGRl-Mi00-YTg5-LWE2-Zm-Qt-Y2-Nk-Yzk3-YTRm-NWZl-Xk-Ey-Xk-Fqc-Gde-QXVy-MTY3-ODky-NDkz-V1-FMjpg-UX1000.jpg",
-      name: "Madame Web 2024",
-      details:
-        "Cassandra Webb is a New York City paramedic who starts to show signs of clairvoyance. Forced to confront revelations about her past, she must protect three young women from a mysterious adversary who wants them dead.",
-      downloadLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      trailer: "https://youtu.be/WAyzEOeeBZw?si=f9D6QPgwcByw5jUA",
-      genre: { genre1: "Action", genre2: "Adventure", genre3: "Sci-Fi" },
-      releaseDate: "16 February 2024",
-      runtime: "1h 56m",
-      director: "S.J. Clarkson",
-      rated: "PG-13",
-      type: "movie",
-      createdAt: "2024-03-15T16:03:46.018Z",
     },
   ]);
 
