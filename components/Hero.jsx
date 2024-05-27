@@ -9,9 +9,58 @@ const Hero = () => {
   const heroRef = useRef(null);
   const [hero, setHero] = useState([
     {
-      _id: {
-        $oid: "661bfe6c0ba225ab3c7520d6",
-      },
+      _id: "665419212241bbe57640cd11",
+      image:
+        "https://i.postimg.cc/kGB5wYy5/AAAABe-Fvoku-Ed1wt-QEi-I-wz-Cy-Q2-Nxq-Km7u-O9-QOB2r-Ux5-OADLq7t-SJBf-Lci-QUg-Wj6yy-Fx9-If-JOzxhx-Yp-Svwje-Rm-ZFIawc-VML80d-W.jpg",
+      name: "Atlas 2024",
+      details:
+        " In a bleak-sounding future, an A.I. soldier has determined that the only way to end war is to end humanity.",
+      downloadLink: [
+        {
+          name: "720p",
+          link: "https://mega.nz/file/rbYzWKjC#ODC5WqnajTa0GgWExBONT3vVab7QUK3Qv8ljpGzqh74",
+        },
+      ],
+      trailer: "https://youtu.be/Jokpt_LJpbw?si=DdKa9-ZUsi1bXQZV",
+      genre: { genre1: "Action", genre2: "Adventure", genre3: "Sci-Fi" },
+      releaseDate: "24 / 5 / 2024",
+      runtime: "1h 58min",
+      director: "Brad Peyton",
+      rated: "PG-13",
+      type: "movie",
+      quality: "720p",
+      createdAt: "2024-05-27T05:24:48.246Z",
+    },
+    {
+      _id: "6643092949668488d3cb86cf",
+      image:
+        "https://i.postimg.cc/JhGD0C4Y/MV5-BY2-Qw-OGE2-NGQt-MWQw-Ni00-M2-Iz-LThl-NWIt-YWMz-NGQ5-YWNi-ZDA4-Xk-Ey-Xk-Fqc-Gde-QXVy-NTE1-Nj-Y5-Mg-V1.jpg",
+      name: "Godzilla x Kong: The New Empire 2024",
+      details:
+        "Two ancient titans, Godzilla and Kong, clash in an epic battle as humans unravel their intertwined origins and connection to Skull Island's mysteries.",
+      downloadLink: [
+        {
+          name: "720p",
+          link: "https://mega.nz/file/MucigJ7a#2Co5EzBbCQQpPVpDVCQ7FJ1vrYsilMMYkoPwqNYHUm4",
+        },
+        {
+          name: "1080p",
+          link: "https://mega.nz/file/UjVUDaKA#IWFzIEji7wIYft540IWj97aDIi4bRIMbgRPlM4e3QVE",
+        },
+      ],
+      trailer:
+        "https://m.youtube.com/watch?v=lV1OOlGwExM&pp=ygUsZ29kemlsbGEgeCBrb25nIHRoZSBuZXcgZW1waXJlIDIwMjQgdHJhaWxlciA%3D",
+      genre: { genre1: "Action", genre2: "Adventure", genre3: "Fantasy" },
+      releaseDate: "4 / 4 / 2024 (Germany)",
+      runtime: "1h 55min",
+      director: "Adam Wingard",
+      rated: "12",
+      type: "movie",
+      quality: "720p & 1080p",
+      createdAt: "2024-05-14T06:48:08.412Z",
+    },
+    {
+      _id: "661bfe6c0ba225ab3c7520d6",
       image:
         "https://i.postimg.cc/JhS0cRDx/MV5-BN2-Ew-Nj-Fh-Mm-Et-ZDc4-YS00-OTUw-LTky-ODEt-Mz-Vi-Mzli-ZWIy-Mz-Yx-Xk-Ey-Xk-Fqc-Gde-QXVy-Mjkw-OTAy-MDU-V1.jpg",
       name: "Fallout 2024",
@@ -70,45 +119,6 @@ const Hero = () => {
       type: "movie",
       quality: "",
       createdAt: "2024-03-15T15:36:41.323Z",
-    },
-    {
-      _id: "65f7dbf2dd2dea72c7796402",
-      image:
-        "https://i.postimg.cc/9FgSM8Zg/MV5-BNTZm-ZDU3-ODEt-Nj-Jh-Ny00-Yz-Bk-LWI1-ODQt-OGRm-NWU1-OGIw-N2-Vk-Xk-Ey-Xk-Fqc-Gde-QXVy-Nj-I4-NDY5-ODM-V1.jpg",
-      name: "Alienoid: Return to the Future 2024",
-      details:
-        "Ancient Taoists travel through time and space in an effort to obtain a divine sword.",
-      downloadLink:
-        "https://mega.nz/file/3IhgWYDT#Z7DafPta0eT1cNyu_i3EQ2eK8FTT5k7wwmP4I6vtz-Y",
-      trailer: "https://youtu.be/snjYMx5A7KU?si=Dhy0JcEHSKgpxvVt",
-      genre: {
-        genre1: "Action",
-        genre2: "Fantasy",
-        genre3: "Sci-Fi",
-      },
-      releaseDate: "10 January 2024",
-      runtime: " 2h 2m",
-      director: "Choi Dong-hoon",
-      rated: "",
-      type: "movie",
-      quality: "480p",
-      createdAt: "2024-03-18T06:15:14.555Z",
-    },
-    {
-      _id: "65f479e7da0dfd91e43bc9b1",
-      image: "https://i.postimg.cc/4yxdgtw3/photo-2024-03-13-13-59-02.jpg",
-      name: "Shogun 2024",
-      details:
-        "Set in Japan in the year 1600, Lord Yoshii Toranaga is fighting for his life as his enemies on the Council of Regents unite against him, when a mysterious European ship is found marooned in a nearby fishing village.",
-      downloadLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      trailer: "https://youtu.be/yAN5uspO_hk?si=cToMUhDsFLcBBDP0",
-      genre: { genre1: "Adventure", genre2: "Drama", genre3: "History" },
-      releaseDate: "27 February 2024",
-      runtime: "",
-      director: "",
-      rated: "TV-14",
-      type: "series",
-      createdAt: "2024-03-15T16:39:40.435Z",
     },
   ]);
 

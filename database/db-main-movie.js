@@ -1,5 +1,17 @@
 export const moviesdb = [
   {
+    id: "665419212241bbe57640cd11",
+    image:
+      "https://i.postimg.cc/kGB5wYy5/AAAABe-Fvoku-Ed1wt-QEi-I-wz-Cy-Q2-Nxq-Km7u-O9-QOB2r-Ux5-OADLq7t-SJBf-Lci-QUg-Wj6yy-Fx9-If-JOzxhx-Yp-Svwje-Rm-ZFIawc-VML80d-W.jpg",
+    name: "Atlas 2024",
+  },
+  {
+    id: "6643092949668488d3cb86cf",
+    image:
+      "https://i.postimg.cc/JhGD0C4Y/MV5-BY2-Qw-OGE2-NGQt-MWQw-Ni00-M2-Iz-LThl-NWIt-YWMz-NGQ5-YWNi-ZDA4-Xk-Ey-Xk-Fqc-Gde-QXVy-NTE1-Nj-Y5-Mg-V1.jpg",
+    name: "Godzilla x Kong: The New Empire 2024",
+  },
+  {
     id: "661bfe6c0ba225ab3c7520d6",
     image:
       "https://i.postimg.cc/JhS0cRDx/MV5-BN2-Ew-Nj-Fh-Mm-Et-ZDc4-YS00-OTUw-LTky-ODEt-Mz-Vi-Mzli-ZWIy-Mz-Yx-Xk-Ey-Xk-Fqc-Gde-QXVy-Mjkw-OTAy-MDU-V1.jpg",
@@ -52,16 +64,5 @@ export const moviesdb = [
     image:
       "https://i.postimg.cc/8kLxDS9d/MV5-BYWJk-Y2-Q4-Nm-Yt-OGRl-Mi00-YTg5-LWE2-Zm-Qt-Y2-Nk-Yzk3-YTRm-NWZl-Xk-Ey-Xk-Fqc-Gde-QXVy-MTY3-ODky-NDkz-V1-FMjpg-UX1000.jpg",
     name: "Madame Web 2024",
-  },
-  {
-    id: "65f57d9f3e419f3c2faa5883",
-    image: "https://i.postimg.cc/zvQrN37Y/download.jpg",
-    name: "Argylle 2024",
-  },
-  {
-    id: "65f57ad23e419f3c2faa5881",
-    image:
-      "https://i.postimg.cc/cLHXGr3J/MV5-BYm-Iz-NWNi-Njkt-NDM1-YS00-Yj-Yx-LThj-MDEt-Ym-E0-NWMw-NGE0-Zm-U0-Xk-Ey-Xk-Fqc-Gde-QXVy-MDM2-NDM2-MQ-V1.jpg",
-    name: "Damsel 2024",
   },
 ];
