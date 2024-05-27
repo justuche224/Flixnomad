@@ -60,6 +60,37 @@ const Hero = () => {
       createdAt: "2024-05-14T06:48:08.412Z",
     },
     {
+      _id: "6654365e300b7943e954371b",
+      image:
+        "https://i.postimg.cc/W1rBsgnz/MV5-BOTI5-Mj-Nj-MTMt-N2-Ni-NC00-Yj-Bl-LTgz-MWQt-MGRh-ZDZk-Ym-Y1-NGU2-Xk-Ey-Xk-Fqc-Gde-QXVy-NTgy-NTA4-Mj-M-V1.jpg",
+      name: "Godzilla Minus One [2023]",
+      details:
+        "Post war Japan is at its lowest point when a new crisis emerges in the form of a giant monster, baptized in the horrific power of the atomic bomb.",
+      downloadLink: [
+        {
+          name: "720p",
+          link: "https://mega.nz/file/nWxnRTDB#of09iCPFmo_KKepFnOgH5MPzDxs0jtKfMferq7HR5bA",
+        },
+        {
+          name: "480p",
+          link: "https://mega.nz/file/aw9xnbSQ#rujn_lY2YcTppG1ycy7Lje7-h_no4hil_WB7RCI5e1I",
+        },
+      ],
+      trailer: "https://youtu.be/VvSrHIX5a-0?si=SKNJJd9CEA9co_aY",
+      genre: {
+        genre1: "Sci-Fi",
+        genre2: "Action",
+        genre3: "Adventure",
+      },
+      releaseDate: "1 / 12 / 2023 (Germany)",
+      runtime: "2h 4min",
+      director: "Takashi Yamazaki",
+      rated: "12",
+      type: "movie",
+      quality: "720p & 480p",
+      createdAt: "2024-05-27T07:29:34.714Z",
+    },
+    {
       _id: "661bfe6c0ba225ab3c7520d6",
       image:
         "https://i.postimg.cc/JhS0cRDx/MV5-BN2-Ew-Nj-Fh-Mm-Et-ZDc4-YS00-OTUw-LTky-ODEt-Mz-Vi-Mzli-ZWIy-Mz-Yx-Xk-Ey-Xk-Fqc-Gde-QXVy-Mjkw-OTAy-MDU-V1.jpg",
@@ -85,40 +116,6 @@ const Hero = () => {
       type: "series",
       quality: "720p",
       createdAt: "2024-04-14T16:03:55.218Z",
-    },
-    {
-      _id: "65f46cf0da84acaaa19daf3e",
-      image: "https://i.postimg.cc/s2XHRWc6/Dune-Part-2-Poster-via-IMDb.jpg",
-      name: "Dune: Part Two 2024",
-      details:
-        "Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the universe, he must prevent a terrible future only he can foresee.",
-      downloadLink: [
-        {
-          name: "1080p",
-          link: "https://mega.nz/file/eDwCGBIC#J6iXBEsREGjHBlUUNhwXpzvds9jTRU_YAce4G2PzArM",
-        },
-        {
-          name: "720p",
-          link: "https://mega.nz/file/TGAQjJIA#Fwc5n2UT2hplTHbDGiczpJ3cQ-cG1gE5-oV5Z_AkFdw",
-        },
-        {
-          name: "480p",
-          link: "https://mega.nz/file/PCwFwLpC#ORkxnABHaRWP7OBEGtDSYzdBAt5OPscf0WUZReKf6mc",
-        },
-      ],
-      trailer: "https://youtu.be/Way9Dexny3w?si=7SFv888VO3yfFo4g",
-      genre: {
-        genre1: "Action",
-        genre2: "Adventure",
-        genre3: "Drama",
-      },
-      releaseDate: "1 March 2024",
-      runtime: "2h 46m",
-      director: "Denis Villeneuve",
-      rated: "PG-13",
-      type: "movie",
-      quality: "",
-      createdAt: "2024-03-15T15:36:41.323Z",
     },
   ]);
 

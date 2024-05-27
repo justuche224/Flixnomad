@@ -12,6 +12,12 @@ export const moviesdb = [
     name: "Godzilla x Kong: The New Empire 2024",
   },
   {
+    id: "6654365e300b7943e954371b",
+    image:
+      "https://i.postimg.cc/W1rBsgnz/MV5-BOTI5-Mj-Nj-MTMt-N2-Ni-NC00-Yj-Bl-LTgz-MWQt-MGRh-ZDZk-Ym-Y1-NGU2-Xk-Ey-Xk-Fqc-Gde-QXVy-NTgy-NTA4-Mj-M-V1.jpg",
+    name: "Godzilla Minus One [2023]",
+  },
+  {
     id: "661bfe6c0ba225ab3c7520d6",
     image:
       "https://i.postimg.cc/JhS0cRDx/MV5-BN2-Ew-Nj-Fh-Mm-Et-ZDc4-YS00-OTUw-LTky-ODEt-Mz-Vi-Mzli-ZWIy-Mz-Yx-Xk-Ey-Xk-Fqc-Gde-QXVy-Mjkw-OTAy-MDU-V1.jpg",
@@ -58,11 +64,5 @@ export const moviesdb = [
     image:
       "https://i.postimg.cc/9FgSM8Zg/MV5-BNTZm-ZDU3-ODEt-Nj-Jh-Ny00-Yz-Bk-LWI1-ODQt-OGRm-NWU1-OGIw-N2-Vk-Xk-Ey-Xk-Fqc-Gde-QXVy-Nj-I4-NDY5-ODM-V1.jpg",
     name: "Alienoid: Return to the Future 2024",
-  },
-  {
-    id: "65f47179da0dfd91e43bc9ae",
-    image:
-      "https://i.postimg.cc/8kLxDS9d/MV5-BYWJk-Y2-Q4-Nm-Yt-OGRl-Mi00-YTg5-LWE2-Zm-Qt-Y2-Nk-Yzk3-YTRm-NWZl-Xk-Ey-Xk-Fqc-Gde-QXVy-MTY3-ODky-NDkz-V1-FMjpg-UX1000.jpg",
-    name: "Madame Web 2024",
   },
 ];
