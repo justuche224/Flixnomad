@@ -9,76 +9,113 @@ const Hero = () => {
   const heroRef = useRef(null);
   const [hero, setHero] = useState([
     {
-      _id: "65f7dbf2dd2dea72c7796402",
+      _id: "665419212241bbe57640cd11",
       image:
-        "https://i.postimg.cc/9FgSM8Zg/MV5-BNTZm-ZDU3-ODEt-Nj-Jh-Ny00-Yz-Bk-LWI1-ODQt-OGRm-NWU1-OGIw-N2-Vk-Xk-Ey-Xk-Fqc-Gde-QXVy-Nj-I4-NDY5-ODM-V1.jpg",
-      name: "Alienoid: Return to the Future 2024",
+        "https://i.postimg.cc/kGB5wYy5/AAAABe-Fvoku-Ed1wt-QEi-I-wz-Cy-Q2-Nxq-Km7u-O9-QOB2r-Ux5-OADLq7t-SJBf-Lci-QUg-Wj6yy-Fx9-If-JOzxhx-Yp-Svwje-Rm-ZFIawc-VML80d-W.jpg",
+      name: "Atlas 2024",
       details:
-        "Ancient Taoists travel through time and space in an effort to obtain a divine sword.",
-      downloadLink:
-        "https://mega.nz/file/3IhgWYDT#Z7DafPta0eT1cNyu_i3EQ2eK8FTT5k7wwmP4I6vtz-Y",
-      trailer: "https://youtu.be/snjYMx5A7KU?si=Dhy0JcEHSKgpxvVt",
-      genre: {
-        genre1: "Action",
-        genre2: "Fantasy",
-        genre3: "Sci-Fi",
-      },
-      releaseDate: "10 January 2024",
-      runtime: " 2h 2m",
-      director: "Choi Dong-hoon",
-      rated: "",
-      type: "movie",
-      quality: "480p",
-      createdAt: "2024-03-18T06:15:14.555Z",
-    },
-    {
-      _id: "65f479e7da0dfd91e43bc9b1",
-      image: "https://i.postimg.cc/4yxdgtw3/photo-2024-03-13-13-59-02.jpg",
-      name: "Shogun 2024",
-      details:
-        "Set in Japan in the year 1600, Lord Yoshii Toranaga is fighting for his life as his enemies on the Council of Regents unite against him, when a mysterious European ship is found marooned in a nearby fishing village.",
-      downloadLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      trailer: "https://youtu.be/yAN5uspO_hk?si=cToMUhDsFLcBBDP0",
-      genre: { genre1: "Adventure", genre2: "Drama", genre3: "History" },
-      releaseDate: "27 February 2024",
-      runtime: "",
-      director: "",
-      rated: "TV-14",
-      type: "series",
-      createdAt: "2024-03-15T16:39:40.435Z",
-    },
-    {
-      _id: "65f47179da0dfd91e43bc9ae",
-      image:
-        "https://i.postimg.cc/8kLxDS9d/MV5-BYWJk-Y2-Q4-Nm-Yt-OGRl-Mi00-YTg5-LWE2-Zm-Qt-Y2-Nk-Yzk3-YTRm-NWZl-Xk-Ey-Xk-Fqc-Gde-QXVy-MTY3-ODky-NDkz-V1-FMjpg-UX1000.jpg",
-      name: "Madame Web 2024",
-      details:
-        "Cassandra Webb is a New York City paramedic who starts to show signs of clairvoyance. Forced to confront revelations about her past, she must protect three young women from a mysterious adversary who wants them dead.",
-      downloadLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      trailer: "https://youtu.be/WAyzEOeeBZw?si=f9D6QPgwcByw5jUA",
+        " In a bleak-sounding future, an A.I. soldier has determined that the only way to end war is to end humanity.",
+      downloadLink: [
+        {
+          name: "720p",
+          link: "https://mega.nz/file/rbYzWKjC#ODC5WqnajTa0GgWExBONT3vVab7QUK3Qv8ljpGzqh74",
+        },
+      ],
+      trailer: "https://youtu.be/Jokpt_LJpbw?si=DdKa9-ZUsi1bXQZV",
       genre: { genre1: "Action", genre2: "Adventure", genre3: "Sci-Fi" },
-      releaseDate: "16 February 2024",
-      runtime: "1h 56m",
-      director: "S.J. Clarkson",
+      releaseDate: "24 / 5 / 2024",
+      runtime: "1h 58min",
+      director: "Brad Peyton",
       rated: "PG-13",
       type: "movie",
-      createdAt: "2024-03-15T16:03:46.018Z",
+      quality: "720p",
+      createdAt: "2024-05-27T05:24:48.246Z",
     },
     {
-      _id: "65f4757bda0dfd91e43bc9af",
-      image: "https://i.postimg.cc/7h921wt5/photo-2024-01-12-19-15-51.jpg",
-      name: " Players 2024",
+      _id: "6643092949668488d3cb86cf",
+      image:
+        "https://i.postimg.cc/JhGD0C4Y/MV5-BY2-Qw-OGE2-NGQt-MWQw-Ni00-M2-Iz-LThl-NWIt-YWMz-NGQ5-YWNi-ZDA4-Xk-Ey-Xk-Fqc-Gde-QXVy-NTE1-Nj-Y5-Mg-V1.jpg",
+      name: "Godzilla x Kong: The New Empire 2024",
       details:
-        "New York sportswriter Mack devises successful hookup techniques with friend Adam and their crew, but when she unexpectedly falls head over heels for one of her targets, they all must learn what it takes to go from simply scoring to playing for keeps.",
-      downloadLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      trailer: "https://youtu.be/8gH6AEBwEAw?si=1hA8Arq0-bCLonbP",
-      genre: { genre1: "Comedy", genre2: "Romance", genre3: "" },
-      releaseDate: "14 February 2024 ",
-      runtime: "1h 45m",
-      director: "Trish Sie",
-      rated: "TV-MA",
+        "Two ancient titans, Godzilla and Kong, clash in an epic battle as humans unravel their intertwined origins and connection to Skull Island's mysteries.",
+      downloadLink: [
+        {
+          name: "720p",
+          link: "https://mega.nz/file/MucigJ7a#2Co5EzBbCQQpPVpDVCQ7FJ1vrYsilMMYkoPwqNYHUm4",
+        },
+        {
+          name: "1080p",
+          link: "https://mega.nz/file/UjVUDaKA#IWFzIEji7wIYft540IWj97aDIi4bRIMbgRPlM4e3QVE",
+        },
+      ],
+      trailer:
+        "https://m.youtube.com/watch?v=lV1OOlGwExM&pp=ygUsZ29kemlsbGEgeCBrb25nIHRoZSBuZXcgZW1waXJlIDIwMjQgdHJhaWxlciA%3D",
+      genre: { genre1: "Action", genre2: "Adventure", genre3: "Fantasy" },
+      releaseDate: "4 / 4 / 2024 (Germany)",
+      runtime: "1h 55min",
+      director: "Adam Wingard",
+      rated: "12",
       type: "movie",
-      createdAt: "2024-03-15T16:20:55.104Z",
+      quality: "720p & 1080p",
+      createdAt: "2024-05-14T06:48:08.412Z",
+    },
+    {
+      _id: "6654365e300b7943e954371b",
+      image:
+        "https://i.postimg.cc/W1rBsgnz/MV5-BOTI5-Mj-Nj-MTMt-N2-Ni-NC00-Yj-Bl-LTgz-MWQt-MGRh-ZDZk-Ym-Y1-NGU2-Xk-Ey-Xk-Fqc-Gde-QXVy-NTgy-NTA4-Mj-M-V1.jpg",
+      name: "Godzilla Minus One [2023]",
+      details:
+        "Post war Japan is at its lowest point when a new crisis emerges in the form of a giant monster, baptized in the horrific power of the atomic bomb.",
+      downloadLink: [
+        {
+          name: "720p",
+          link: "https://mega.nz/file/nWxnRTDB#of09iCPFmo_KKepFnOgH5MPzDxs0jtKfMferq7HR5bA",
+        },
+        {
+          name: "480p",
+          link: "https://mega.nz/file/aw9xnbSQ#rujn_lY2YcTppG1ycy7Lje7-h_no4hil_WB7RCI5e1I",
+        },
+      ],
+      trailer: "https://youtu.be/VvSrHIX5a-0?si=SKNJJd9CEA9co_aY",
+      genre: {
+        genre1: "Sci-Fi",
+        genre2: "Action",
+        genre3: "Adventure",
+      },
+      releaseDate: "1 / 12 / 2023 (Germany)",
+      runtime: "2h 4min",
+      director: "Takashi Yamazaki",
+      rated: "12",
+      type: "movie",
+      quality: "720p & 480p",
+      createdAt: "2024-05-27T07:29:34.714Z",
+    },
+    {
+      _id: "661bfe6c0ba225ab3c7520d6",
+      image:
+        "https://i.postimg.cc/JhS0cRDx/MV5-BN2-Ew-Nj-Fh-Mm-Et-ZDc4-YS00-OTUw-LTky-ODEt-Mz-Vi-Mzli-ZWIy-Mz-Yx-Xk-Ey-Xk-Fqc-Gde-QXVy-Mjkw-OTAy-MDU-V1.jpg",
+      name: "Fallout 2024",
+      details:
+        "In a future, post-apocalyptic Los Angeles brought about by nuclear decimation, citizens must live in underground bunkers to protect themselves from radiation, mutants and bandits.",
+      downloadLink: [
+        {
+          name: "Season 1",
+          link: "https://mega.nz/folder/FC0jVK7I#efTlu3i3NHsskkcNiOM1fA",
+        },
+      ],
+      trailer: "https://www.youtube.com/watch?v=V-mugKDQDlg",
+      genre: {
+        genre1: "Adventure",
+        genre2: "Drama",
+        genre3: "Sci-Fi",
+      },
+      releaseDate: "11 / 4 / 2024",
+      runtime: "",
+      director: "Geneva Robertson-Dworet Graham Wagner",
+      rated: "16",
+      type: "series",
+      quality: "720p",
+      createdAt: "2024-04-14T16:03:55.218Z",
     },
   ]);
 

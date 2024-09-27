@@ -1,25 +1,14 @@
-import Provider from "@/components/Provider";
-import LoginForm from "@/components/Admin/LoginForm";
-import { getServerSession } from "next-auth";
-import MovieForm from "@/components/Form";
-import Logout from "@/components/Admin/Logout";
+import Link from "next/link";
 
 export default async function page() {
-  const session = await getServerSession();
   return (
-    <Provider>
-      <nav className="mt-[5rem] text-center text-3xl mb-4">
-        {session ? (
-          <div className="grid place-content-center">
-            <h1>Hello</h1>
-            <h1>{session.user.email}</h1>
-            <Logout />
-          </div>
-        ) : (
-          <h1>Admin Only</h1>
-        )}
-      </nav>
-      {session ? <MovieForm /> : <LoginForm />}
-    </Provider>
+    <section className="flex flex-col gap-3 justify-center text-center items-center">
+      <Link
+        href="/admin/add"
+        className="w-[200px] bg-red-500 border border-transparent px-3 py-1 rounded-md hover:text-red-500 hover:bg-transparent hover:border hover:border-red-500 transition-all duration-300"
+      >
+        Add new Movie
+      </Link>
+    </section>
   );
 }
