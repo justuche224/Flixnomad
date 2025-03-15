@@ -40,8 +40,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="icon" href="./favicon.ico" sizes="any" />
-<Script src='//pl22852390.profitablegatecpm.com/53/4a/c7/534ac7ceaddae4350e5227cba8a0fa2f.js'/>
-        <Script src='//pl22854886.profitablegatecpm.com/a9/32/4a/a9324a61f1f094cc6eb77b9213ddd5d6.js'/>
+        {/* <Script src='//pl22852390.profitablegatecpm.com/53/4a/c7/534ac7ceaddae4350e5227cba8a0fa2f.js'/>
+        <Script src='//pl22854886.profitablegatecpm.com/a9/32/4a/a9324a61f1f094cc6eb77b9213ddd5d6.js'/> */}
       </head>
       <body className="bg-[#00031c] text-white pt-sans-regular">
         <header>
@@ -52,12 +52,12 @@ export default function RootLayout({ children }) {
         <main className="block md:flex gap-5 min-h-screen">
           <section className="w-full">{children}</section>
         </main>
-        <Script
+        {/* <Script
           async="async"
           data-cfasync="false"
           src="//pl22851714.profitablegatecpm.com/db1ec6b49cd714ed8f3a8404edb1fa73/invoke.js"
         />
-        <div id="container-db1ec6b49cd714ed8f3a8404edb1fa73"></div>
+        <div id="container-db1ec6b49cd714ed8f3a8404edb1fa73"></div> */}
         <footer>
           <Footer />
         </footer>
